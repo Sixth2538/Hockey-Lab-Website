@@ -1266,6 +1266,16 @@
           "id": "vMGz9fdv8LTY",
           "name": "Solis Logo.png",
           "filePath": "../public/plasmic/hockey_lab_website/images/solisLogoPng.png"
+        },
+        {
+          "id": "-o-HnkyQy6av",
+          "name": "40588853_1094181470722536_5581507840230555648_n.jpg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/_4058885310941814707225365581507840230555648NJpg.jpg"
+        },
+        {
+          "id": "LDVKoQ5TDNwp",
+          "name": "Starr Hall Logo.svg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/starrHallLogoSvg.svg"
         }
       ],
       "indirect": false,
@@ -1302,6 +1312,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.340",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.340/dist/plasmic.schema.json"
+  "cliVersion": "0.1.341",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.341/dist/plasmic.schema.json"
 }

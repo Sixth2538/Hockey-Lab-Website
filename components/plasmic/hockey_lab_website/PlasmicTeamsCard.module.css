@@ -16,9 +16,9 @@
   border: 1px solid var(--token-pO-EWZheHKxz);
 }
 .root:hover {
-  box-shadow: 8px 8px 0px 0px var(--token-NtAmdQ_kualH);
+  box-shadow: 8px 8px 0px 0px var(--token-5nf-gDqVbFjs);
   transform: translateX(-8px) translateY(-8px) translateZ(0px);
-  border-color: var(--token-NtAmdQ_kualH);
+  border-color: var(--token-5nf-gDqVbFjs);
 }
 .button__uYaR:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;

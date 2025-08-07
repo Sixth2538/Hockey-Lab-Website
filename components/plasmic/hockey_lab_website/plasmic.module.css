@@ -184,11 +184,11 @@
   --mixin-jjxqL9SBbQoR_line-height: var(--token-C5UbHj9-MvSg);
   --mixin-jjxqL9SBbQoR_white-space: pre-wrap;
   --mixin-bOkBghtMqBWX_color: var(--token-5nf-gDqVbFjs);
-  --mixin-bOkBghtMqBWX_font-size: var(--token-BwOcdtoxJOlu);
   --mixin-bOkBghtMqBWX_font-weight: 300;
   --mixin-bOkBghtMqBWX_line-height: 1.2;
   --mixin-bOkBghtMqBWX_font-family: "Futura";
   --mixin-bOkBghtMqBWX_text-transform: uppercase;
+  --mixin-bOkBghtMqBWX_font-size: 48px;
   --mixin-bOkBghtMqBWX_white-space: pre-wrap;
   --mixin-ieiXuGvhKOzp_color: var(--token-5nf-gDqVbFjs);
   --mixin-ieiXuGvhKOzp_font-size: 12px;
@@ -683,11 +683,11 @@ h3:where(.root_reset.h3),
 :where(.root_reset_tags) h3,
 h3:where(.root_reset_tags) {
   color: var(--mixin-bOkBghtMqBWX_color);
-  font-size: var(--mixin-bOkBghtMqBWX_font-size);
   font-weight: var(--mixin-bOkBghtMqBWX_font-weight);
   line-height: var(--mixin-bOkBghtMqBWX_line-height);
   font-family: var(--mixin-bOkBghtMqBWX_font-family);
   text-transform: var(--mixin-bOkBghtMqBWX_text-transform);
+  font-size: var(--mixin-bOkBghtMqBWX_font-size);
 }
 
 :where(.root_reset) h4:where(.h4),

@@ -227,6 +227,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__xouM)}
                     delay={500}
+                    duration={2000}
                     triggerOnce={true}
                   >
                     <h1
@@ -365,64 +366,35 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              <div className={classNames(projectcss.all, sty.column__xb630)}>
+              <div className={classNames(projectcss.all, sty.column__flh2)}>
                 <ServiceCard
                   className={classNames(
                     "__wab_instance",
-                    sty.serviceCard__yInar
-                  )}
-                  slot={"Club & School Coaching"}
-                  slot2={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tlQ2
-                      )}
-                    >
-                      {"Target driven success through trusted process"}
-                    </div>
-                  }
-                  slot3={
-                    "Our approach centers on building a strong team bond and a supportive growth environment, enabling each player to reach their full potential while striving for shared success."
-                  }
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__elw8C)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"175px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/hockey_lab_website/images/winner2Png.png",
-                      fullWidth: 2000,
-                      fullHeight: 2000,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </ServiceCard>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__gLgf0)}>
-                <ServiceCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.serviceCard__b9Bph
+                    sty.serviceCard__fkoVy
                   )}
                   slot={
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__wPahc
+                        sty.text__t87L
                       )}
                     >
-                      {"Individual & Group Coaching"}
+                      {"Club & School Coaching"}
                     </div>
                   }
+                  slot3={
+                    "Our approach centers on building a strong team bond and a supportive growth environment, enabling each player to reach their full potential while striving for shared success."
+                  }
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.column__iIJq7)}>
+                <ServiceCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.serviceCard___9Swmi
+                  )}
+                  slot={"Individual & Group Coaching"}
                   slot2={
                     "Personalised training tailored for individual and small group needs"
                   }
@@ -432,7 +404,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__mDdf4)}
+                    className={classNames(sty.img___4Bq91)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -449,11 +421,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </ServiceCard>
               </div>
-              <div className={classNames(projectcss.all, sty.column__zzBa)}>
+              <div className={classNames(projectcss.all, sty.column__h4DAc)}>
                 <ServiceCard
                   className={classNames(
                     "__wab_instance",
-                    sty.serviceCard__amO4K
+                    sty.serviceCard__kt6N
                   )}
                   slot={"Hockey Tour"}
                   slot2={
@@ -465,7 +437,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__qde6Y)}
+                    className={classNames(sty.img__stpHy)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -529,15 +501,13 @@ function PlasmicHomepage__RenderFunc(props: {
                   </React.Fragment>
                 </React.Fragment>
               </div>
-              <Reveal
-                cascade={false}
-                className={classNames("__wab_instance", sty.reveal__hmxCw)}
-                delay={1000}
-                effect={"fade"}
-                reverse={false}
-                triggerOnce={true}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__wxRr)}>
+              <div className={classNames(projectcss.all, sty.freeBox__wxRr)}>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__dVarP)}
+                  delay={500}
+                  duration={3000}
+                  triggerOnce={true}
+                >
                   <ProcessCard
                     className={classNames(
                       "__wab_instance",
@@ -557,6 +527,13 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Discover"}
                   </ProcessCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__udrjY)}
+                  delay={1000}
+                  duration={3000}
+                  triggerOnce={true}
+                >
                   <ProcessCard
                     className={classNames(
                       "__wab_instance",
@@ -575,7 +552,13 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                     slot2={"Age 6-10"}
                   />
-
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__pZHrT)}
+                  delay={2000}
+                  duration={3000}
+                  triggerOnce={true}
+                >
                   <ProcessCard
                     className={classNames(
                       "__wab_instance",
@@ -604,6 +587,13 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Compete & Improve"}
                     </div>
                   </ProcessCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__cPWy)}
+                  delay={2500}
+                  duration={3000}
+                  triggerOnce={true}
+                >
                   <ProcessCard
                     className={classNames(
                       "__wab_instance",
@@ -642,6 +632,13 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Peak Performance"}
                     </div>
                   </ProcessCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__aO7T)}
+                  delay={3000}
+                  duration={3000}
+                  triggerOnce={true}
+                >
                   <ProcessCard
                     className={classNames(
                       "__wab_instance",
@@ -680,9 +677,42 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Lifetime Engagement"}
                     </div>
                   </ProcessCard>
-                </div>
-              </Reveal>
+                </Reveal>
+              </div>
             </div>
+            <section className={classNames(projectcss.all, sty.section__odpkc)}>
+              <div className={classNames(projectcss.all, sty.freeBox__mWiys)}>
+                <h6
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h6,
+                    projectcss.__wab_text,
+                    sty.h6___70Eqk
+                  )}
+                >
+                  {"Guiding you along with our exceptional"}
+                </h6>
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2___7Ty5C
+                  )}
+                >
+                  {"Coaching Team"}
+                </h2>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iSenu
+                  )}
+                >
+                  {"International Experience"}
+                </div>
+              </div>
+            </section>
           </section>
           <section className={classNames(projectcss.all, sty.section__zdrLw)}>
             <div className={classNames(projectcss.all, sty.freeBox__ntHBt)}>
@@ -706,16 +736,75 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"Honor achieved by our teams & individuals"}
               </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__g3Szl
-                )}
-              >
-                {
-                  "35 Schools & Team | 300+ Students | 20+ Team & Individual Awards"
-                }
+              <div className={classNames(projectcss.all, sty.freeBox__sv5O2)}>
+                <div className={classNames(projectcss.all, sty.freeBox__t2NZc)}>
+                  <h3
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3__hLwOo
+                    )}
+                  >
+                    {"35+"}
+                  </h3>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__u0Pso
+                    )}
+                  >
+                    {"Schools & Teams"}
+                  </h4>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__oEnPs)}>
+                  <h3
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3__xoTyQ
+                    )}
+                  >
+                    {"300+"}
+                  </h3>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__iytX6
+                    )}
+                  >
+                    {"Students"}
+                  </h4>
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6UO8N)}
+                >
+                  <h3
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h3,
+                      projectcss.__wab_text,
+                      sty.h3__fGaUl
+                    )}
+                  >
+                    {"20+"}
+                  </h3>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__xupUo
+                    )}
+                  >
+                    {"Team & Individual Awards"}
+                  </h4>
+                </div>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__sZm0E)}>
@@ -931,9 +1020,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/hockey_lab_website/images/titansLogoJpg.jpg",
-                        fullWidth: 1241,
-                        fullHeight: 1241,
+                        src: "/plasmic/hockey_lab_website/images/_4058885310941814707225365581507840230555648NJpg.jpg",
+                        fullWidth: 150,
+                        fullHeight: 150,
                         aspectRatio: undefined
                       }}
                     />
@@ -1128,9 +1217,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
-                        fullWidth: 60,
-                        fullHeight: 73,
+                        src: "/plasmic/hockey_lab_website/images/starrHallLogoSvg.svg",
+                        fullWidth: 2000,
+                        fullHeight: 2000,
                         aspectRatio: undefined
                       }}
                     />
@@ -1643,7 +1732,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h6__sjGt4
                 )}
               >
-                {"Our Promise"}
+                {"Trusted by"}
               </h6>
               <h2
                 className={classNames(
@@ -1653,7 +1742,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__dz4P
                 )}
               >
-                {"Proudly Advising"}
+                {"Our Partners"}
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__xkUVz)}>

@@ -264,23 +264,27 @@
 .img__zzFvR > picture > img {
   object-fit: fill;
 }
-.column__iIJq7 {
+.column__a8Abb {
   display: flex;
-  flex-direction: column;
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   justify-content: center;
   align-items: center;
   min-width: 0;
-  padding: 8px;
 }
-.serviceCard___9Swmi:global(.__wab_instance) {
+.serviceCard__ni3Qe:global(.__wab_instance) {
   max-width: 100%;
   flex-shrink: 0;
 }
-.img___4Bq91 {
+.text__lLjuK {
+  height: auto;
+}
+.img__cTdsH {
   object-fit: fill;
   align-self: flex-end;
   left: auto;
@@ -288,26 +292,32 @@
   position: relative;
   width: 175px;
 }
-.img___4Bq91 > picture > img {
+.img__cTdsH > picture > img {
   object-fit: fill;
 }
-.column__h4DAc {
+.column__qmFpy {
   display: flex;
-  flex-direction: column;
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   justify-content: center;
   align-items: center;
+  align-self: center;
   min-width: 0;
-  padding: 8px;
 }
-.serviceCard__kt6N:global(.__wab_instance) {
+.serviceCard__lYy5T:global(.__wab_instance) {
   max-width: 100%;
   flex-shrink: 0;
 }
-.img__stpHy {
+.text___7Qe5A {
+  height: auto;
+  padding-top: 0px;
+}
+.img__nt2G {
   object-fit: fill;
   align-self: flex-end;
   left: auto;
@@ -315,7 +325,7 @@
   position: relative;
   width: 175px;
 }
-.img__stpHy > picture > img {
+.img__nt2G > picture > img {
   object-fit: fill;
 }
 .section__v69Ep {
@@ -631,6 +641,10 @@
   min-width: 0;
   padding: 8px;
 }
+.reveal__jWcHs:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
 .h3__hLwOo {
   width: 100%;
   height: auto;
@@ -656,6 +670,10 @@
   min-width: 0;
   padding: 8px;
 }
+.reveal__viIUv:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
 .h3__xoTyQ {
   width: 100%;
   height: auto;
@@ -680,6 +698,10 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
+}
+.reveal__yjoBo:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
 }
 .h3__fGaUl {
   width: 100%;

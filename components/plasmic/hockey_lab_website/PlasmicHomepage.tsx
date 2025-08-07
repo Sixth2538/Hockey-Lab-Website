@@ -388,13 +388,23 @@ function PlasmicHomepage__RenderFunc(props: {
                   }
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__iIJq7)}>
+              <div className={classNames(projectcss.all, sty.column__a8Abb)}>
                 <ServiceCard
                   className={classNames(
                     "__wab_instance",
-                    sty.serviceCard___9Swmi
+                    sty.serviceCard__ni3Qe
                   )}
-                  slot={"Individual & Group Coaching"}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__lLjuK
+                      )}
+                    >
+                      {"Individual & Group Coaching"}
+                    </div>
+                  }
                   slot2={
                     "Personalised training tailored for individual and small group needs"
                   }
@@ -404,7 +414,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img___4Bq91)}
+                    className={classNames(sty.img__cTdsH)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -421,13 +431,23 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </ServiceCard>
               </div>
-              <div className={classNames(projectcss.all, sty.column__h4DAc)}>
+              <div className={classNames(projectcss.all, sty.column__qmFpy)}>
                 <ServiceCard
                   className={classNames(
                     "__wab_instance",
-                    sty.serviceCard__kt6N
+                    sty.serviceCard__lYy5T
                   )}
-                  slot={"Hockey Tour"}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___7Qe5A
+                      )}
+                    >
+                      {"Hockey Tour"}
+                    </div>
+                  }
                   slot2={
                     "Experience foreign hockey culture with our overseas tour"
                   }
@@ -437,7 +457,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__stpHy)}
+                    className={classNames(sty.img__nt2G)}
                     displayHeight={"auto"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -738,16 +758,23 @@ function PlasmicHomepage__RenderFunc(props: {
               </h2>
               <div className={classNames(projectcss.all, sty.freeBox__sv5O2)}>
                 <div className={classNames(projectcss.all, sty.freeBox__t2NZc)}>
-                  <h3
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h3,
-                      projectcss.__wab_text,
-                      sty.h3__hLwOo
-                    )}
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__jWcHs)}
+                    delay={1000}
+                    effect={"slide"}
+                    triggerOnce={true}
                   >
-                    {"35+"}
-                  </h3>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3__hLwOo
+                      )}
+                    >
+                      {"35+"}
+                    </h3>
+                  </Reveal>
                   <h4
                     className={classNames(
                       projectcss.all,
@@ -760,16 +787,23 @@ function PlasmicHomepage__RenderFunc(props: {
                   </h4>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__oEnPs)}>
-                  <h3
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h3,
-                      projectcss.__wab_text,
-                      sty.h3__xoTyQ
-                    )}
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__viIUv)}
+                    delay={2000}
+                    effect={"slide"}
+                    triggerOnce={true}
                   >
-                    {"300+"}
-                  </h3>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3__xoTyQ
+                      )}
+                    >
+                      {"300+"}
+                    </h3>
+                  </Reveal>
                   <h4
                     className={classNames(
                       projectcss.all,
@@ -784,16 +818,23 @@ function PlasmicHomepage__RenderFunc(props: {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___6UO8N)}
                 >
-                  <h3
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h3,
-                      projectcss.__wab_text,
-                      sty.h3__fGaUl
-                    )}
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__yjoBo)}
+                    delay={3000}
+                    effect={"slide"}
+                    triggerOnce={true}
                   >
-                    {"20+"}
-                  </h3>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.__wab_text,
+                        sty.h3__fGaUl
+                      )}
+                    >
+                      {"20+"}
+                    </h3>
+                  </Reveal>
                   <h4
                     className={classNames(
                       projectcss.all,

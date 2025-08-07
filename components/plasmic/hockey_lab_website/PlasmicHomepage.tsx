@@ -1366,7 +1366,9 @@ function PlasmicHomepage__RenderFunc(props: {
             {(() => {
               const child$Props = {
                 arrowColor: true ? "#D1D5DB" : undefined,
-                arrows: true,
+                arrows: hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? false
+                  : true,
                 autoplay: false,
                 autoplaySpeed: 0,
                 beforeChange: async (...eventArgs: any) => {

@@ -62,6 +62,8 @@ import {
 import HeaderNavBar from "../../HeaderNavBar"; // plasmic-import: 6Us2WCXn4WFf/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import ServiceCard from "../../ServiceCard"; // plasmic-import: WpsoIcLzp7L2/component
+import ServiceCard2 from "../../ServiceCard2"; // plasmic-import: sGwmsxf_S2NU/component
+import ServiceCard3 from "../../ServiceCard3"; // plasmic-import: ofZRJvk17xGu/component
 import ProcessCard from "../../ProcessCard"; // plasmic-import: Uah7VsWpV6Q4/component
 import TeamsCard from "../../TeamsCard"; // plasmic-import: MlYa0Ac5yeND/component
 import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
@@ -101,6 +103,9 @@ export type PlasmicHomepage__OverridesType = {
   h1?: Flex__<"h1">;
   blockquote?: Flex__<"blockquote">;
   columns?: Flex__<"div">;
+  serviceCard?: Flex__<typeof ServiceCard>;
+  serviceCard2?: Flex__<typeof ServiceCard2>;
+  serviceCard3?: Flex__<typeof ServiceCard3>;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
 };
 
@@ -366,113 +371,26 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-override={overrides.columns}
               className={classNames(projectcss.all, sty.columns)}
             >
-              <div className={classNames(projectcss.all, sty.column__flh2)}>
+              <div className={classNames(projectcss.all, sty.column__bEmRo)}>
                 <ServiceCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.serviceCard__fkoVy
-                  )}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__t87L
-                      )}
-                    >
-                      {"Club & School Coaching"}
-                    </div>
-                  }
-                  slot3={
-                    "Our approach centers on building a strong team bond and a supportive growth environment, enabling each player to reach their full potential while striving for shared success."
-                  }
+                  data-plasmic-name={"serviceCard"}
+                  data-plasmic-override={overrides.serviceCard}
+                  className={classNames("__wab_instance", sty.serviceCard)}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__a8Abb)}>
-                <ServiceCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.serviceCard__ni3Qe
-                  )}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lLjuK
-                      )}
-                    >
-                      {"Individual & Group Coaching"}
-                    </div>
-                  }
-                  slot2={
-                    "Personalised training tailored for individual and small group needs"
-                  }
-                  slot3={
-                    "Our individual and group training prioritize maximizing ball contact time and specificity to deliver optimal player development."
-                  }
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__cTdsH)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"175px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/hockey_lab_website/images/fitnessPng.png",
-                      fullWidth: 2000,
-                      fullHeight: 2000,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </ServiceCard>
+              <div className={classNames(projectcss.all, sty.column__mAufG)}>
+                <ServiceCard2
+                  data-plasmic-name={"serviceCard2"}
+                  data-plasmic-override={overrides.serviceCard2}
+                  className={classNames("__wab_instance", sty.serviceCard2)}
+                />
               </div>
-              <div className={classNames(projectcss.all, sty.column__qmFpy)}>
-                <ServiceCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.serviceCard__lYy5T
-                  )}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___7Qe5A
-                      )}
-                    >
-                      {"Hockey Tour"}
-                    </div>
-                  }
-                  slot2={
-                    "Experience foreign hockey culture with our overseas tour"
-                  }
-                  slot3={
-                    "We take care of all the logistics \u2013 transportation, accommodation, training facilities, and opponent scheduling \u2013 so you can focus on your hockey."
-                  }
-                >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__nt2G)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"175px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/hockey_lab_website/images/travelingPng.png",
-                      fullWidth: 2000,
-                      fullHeight: 2000,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </ServiceCard>
+              <div className={classNames(projectcss.all, sty.column__reOsv)}>
+                <ServiceCard3
+                  data-plasmic-name={"serviceCard3"}
+                  data-plasmic-override={overrides.serviceCard3}
+                  className={classNames("__wab_instance", sty.serviceCard3)}
+                />
               </div>
             </div>
           </section>
@@ -1995,12 +1913,18 @@ const PlasmicDescendants = {
     "h1",
     "blockquote",
     "columns",
+    "serviceCard",
+    "serviceCard2",
+    "serviceCard3",
     "sliderCarousel"
   ],
   headerNavBar: ["headerNavBar"],
   h1: ["h1"],
   blockquote: ["blockquote"],
-  columns: ["columns"],
+  columns: ["columns", "serviceCard", "serviceCard2", "serviceCard3"],
+  serviceCard: ["serviceCard"],
+  serviceCard2: ["serviceCard2"],
+  serviceCard3: ["serviceCard3"],
   sliderCarousel: ["sliderCarousel"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -2012,6 +1936,9 @@ type NodeDefaultElementType = {
   h1: "h1";
   blockquote: "blockquote";
   columns: "div";
+  serviceCard: typeof ServiceCard;
+  serviceCard2: typeof ServiceCard2;
+  serviceCard3: typeof ServiceCard3;
   sliderCarousel: typeof SliderWrapper;
 };
 
@@ -2079,6 +2006,9 @@ export const PlasmicHomepage = Object.assign(
     h1: makeNodeComponent("h1"),
     blockquote: makeNodeComponent("blockquote"),
     columns: makeNodeComponent("columns"),
+    serviceCard: makeNodeComponent("serviceCard"),
+    serviceCard2: makeNodeComponent("serviceCard2"),
+    serviceCard3: makeNodeComponent("serviceCard3"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
 
     // Metadata about props expected for PlasmicHomepage

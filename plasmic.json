@@ -1087,6 +1087,32 @@
           "cssFilePath": "plasmic/hockey_lab_website/PlasmicTestimonialCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "sGwmsxf_S2NU",
+          "name": "ServiceCard2",
+          "type": "managed",
+          "projectId": "vqq2EkAzn3CTTzmF7cN3ao",
+          "renderModuleFilePath": "plasmic/hockey_lab_website/PlasmicServiceCard2.tsx",
+          "importSpec": {
+            "modulePath": "ServiceCard2.tsx"
+          },
+          "cssFilePath": "plasmic/hockey_lab_website/PlasmicServiceCard2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ofZRJvk17xGu",
+          "name": "ServiceCard3",
+          "type": "managed",
+          "projectId": "vqq2EkAzn3CTTzmF7cN3ao",
+          "renderModuleFilePath": "plasmic/hockey_lab_website/PlasmicServiceCard3.tsx",
+          "importSpec": {
+            "modulePath": "ServiceCard3.tsx"
+          },
+          "cssFilePath": "plasmic/hockey_lab_website/PlasmicServiceCard3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

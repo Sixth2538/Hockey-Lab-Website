@@ -376,6 +376,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   data-plasmic-name={"serviceCard"}
                   data-plasmic-override={overrides.serviceCard}
                   className={classNames("__wab_instance", sty.serviceCard)}
+                  slot3={
+                    "Our approach centers on building a strong team bond and a supportive growth environment, enabling each player to reach their full potential while striving for shared success."
+                  }
                 />
               </div>
               <div className={classNames(projectcss.all, sty.column__mAufG)}>

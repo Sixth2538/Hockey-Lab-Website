@@ -1,0 +1,97 @@
+.ariaDialogTrigger:global(.__wab_instance) {
+  position: relative;
+}
+.svg__fW4R {
+  position: relative;
+  height: 1em;
+}
+.svg__rUh17 {
+  position: relative;
+  height: 1em;
+}
+.ariaModal:global(.__wab_instance) {
+  background: var(--token-WHsNhxc1OvW6);
+  display: block;
+  color: var(--token-DdQoxEiT2t69);
+  font-family: var(--token-nE-sPYL9UIfx);
+  font-size: var(--token-MBstGEjJWStK);
+  line-height: var(--token-49wqGsCo5cLM);
+  outline-style: none;
+  box-shadow: 0px 24px 48px -12px #00000040;
+  border-radius: var(--token-JeWKN3aiXaLs);
+}
+.pcls_-06bBX2fuGSm {
+  background: var(--token-zsEza3qSQsc5);
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  outline: none;
+}
+.ariaDialog:global(.__wab_instance) {
+  max-width: 90vw;
+  object-fit: cover;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  outline-style: none;
+}
+.h3__frIth {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: var(--token-DDPbAx5wpld9);
+  min-width: 0;
+  padding: var(--token-wGKACmkVqOpa);
+}
+.scrollableContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: auto;
+  padding-left: var(--token-wGKACmkVqOpa);
+  padding-right: var(--token-wGKACmkVqOpa);
+}
+.freeBox__uwAv2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: var(--token-uhafrxlSWfCG);
+}
+.text___3Bp0E {
+  position: relative;
+}
+.freeBox__awc {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 0;
+  padding: var(--token-wGKACmkVqOpa);
+}
+.svg__rgQpf {
+  position: relative;
+  height: 1em;
+}
+.text__lJkZ {
+  padding-left: 0px;
+}
+.svg__nweK3 {
+  position: relative;
+  height: 1em;
+}

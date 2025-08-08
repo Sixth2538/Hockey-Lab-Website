@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens {
   --token-NtAmdQ_kualH: #dc4405;
@@ -142,9 +142,9 @@
 }
 
 .plasmic_default_styles {
-  --mixin-4v6rvqNFfXBD_font-family: "Futura";
+  --mixin-4v6rvqNFfXBD_font-family: "League Spartan", sans-serif;
   --mixin-4v6rvqNFfXBD_font-size: 20px;
-  --mixin-4v6rvqNFfXBD_font-weight: 300;
+  --mixin-4v6rvqNFfXBD_font-weight: 200;
   --mixin-4v6rvqNFfXBD_font-style: normal;
   --mixin-4v6rvqNFfXBD_color: var(--token-5nf-gDqVbFjs);
   --mixin-4v6rvqNFfXBD_text-align: center;
@@ -159,7 +159,7 @@
   --mixin-RxchH9s73bOb_font-size: 128px;
   --mixin-RxchH9s73bOb_line-height: 1;
   --mixin-RxchH9s73bOb_letter-spacing: -1px;
-  --mixin-RxchH9s73bOb_font-family: "Futura";
+  --mixin-RxchH9s73bOb_font-family: "League Spartan", sans-serif;
   --mixin-RxchH9s73bOb_font-style: italic;
   --mixin-RxchH9s73bOb_text-transform: uppercase;
   --mixin-RxchH9s73bOb_text-align: left;
@@ -167,16 +167,16 @@
   --mixin-RxchH9s73bOb_user-select: none;
   --mixin-RxchH9s73bOb_white-space: pre-wrap;
   --mixin-A3N8Yk6Lqk_M_color: var(--token-5nf-gDqVbFjs);
-  --mixin-A3N8Yk6Lqk_M_font-size: 36px;
-  --mixin-A3N8Yk6Lqk_M_font-weight: 100;
+  --mixin-A3N8Yk6Lqk_M_font-size: 48px;
+  --mixin-A3N8Yk6Lqk_M_font-weight: 200;
   --mixin-A3N8Yk6Lqk_M_line-height: 1.1;
-  --mixin-A3N8Yk6Lqk_M_font-family: "Futura";
+  --mixin-A3N8Yk6Lqk_M_font-family: "League Spartan", sans-serif;
   --mixin-A3N8Yk6Lqk_M_text-transform: uppercase;
   --mixin-A3N8Yk6Lqk_M_font-style: normal;
   --mixin-A3N8Yk6Lqk_M_text-align: center;
   --mixin-A3N8Yk6Lqk_M_white-space: pre-wrap;
   --mixin-jjxqL9SBbQoR_color: var(--token-kvfgcHIi7Sgn);
-  --mixin-jjxqL9SBbQoR_font-family: "Futura";
+  --mixin-jjxqL9SBbQoR_font-family: "League Spartan", sans-serif;
   --mixin-jjxqL9SBbQoR_font-weight: 200;
   --mixin-jjxqL9SBbQoR_text-transform: capitalize;
   --mixin-jjxqL9SBbQoR_font-size: var(--token-o0Nl0Hefncwa);
@@ -184,16 +184,16 @@
   --mixin-jjxqL9SBbQoR_line-height: var(--token-C5UbHj9-MvSg);
   --mixin-jjxqL9SBbQoR_white-space: pre-wrap;
   --mixin-bOkBghtMqBWX_color: var(--token-5nf-gDqVbFjs);
-  --mixin-bOkBghtMqBWX_font-weight: 300;
+  --mixin-bOkBghtMqBWX_font-weight: 100;
   --mixin-bOkBghtMqBWX_line-height: 1.2;
-  --mixin-bOkBghtMqBWX_font-family: "Futura";
+  --mixin-bOkBghtMqBWX_font-family: "League Spartan", sans-serif;
   --mixin-bOkBghtMqBWX_text-transform: uppercase;
-  --mixin-bOkBghtMqBWX_font-size: 48px;
+  --mixin-bOkBghtMqBWX_font-size: 36px;
   --mixin-bOkBghtMqBWX_white-space: pre-wrap;
   --mixin-ieiXuGvhKOzp_color: var(--token-5nf-gDqVbFjs);
   --mixin-ieiXuGvhKOzp_font-size: 12px;
   --mixin-ieiXuGvhKOzp_font-weight: 700;
-  --mixin-ieiXuGvhKOzp_font-family: "Futura";
+  --mixin-ieiXuGvhKOzp_font-family: "League Spartan", sans-serif;
   --mixin-ieiXuGvhKOzp_text-align: center;
   --mixin-ieiXuGvhKOzp_user-select: none;
   --mixin-ieiXuGvhKOzp_text-transform: capitalize;
@@ -227,7 +227,7 @@
   --mixin-ZDyMlzqe6c8I_border-left-width: 3px;
   --mixin-ZDyMlzqe6c8I_color: var(--token-jgohepLVeKvh);
   --mixin-ZDyMlzqe6c8I_padding-left: 10px;
-  --mixin-ZDyMlzqe6c8I_font-family: "Futura";
+  --mixin-ZDyMlzqe6c8I_font-family: "League Spartan", sans-serif;
   --mixin-ZDyMlzqe6c8I_text-align: left;
   --mixin-ZDyMlzqe6c8I_white-space: pre-wrap;
   --mixin-DmcjbJRza1Y1_background: linear-gradient(#f8f8f8, #f8f8f8);
@@ -275,13 +275,13 @@
   --mixin-0IaApH_gX51c_font-size: 20px;
   --mixin-0IaApH_gX51c_font-weight: 300;
   --mixin-0IaApH_gX51c_line-height: 1.5;
-  --mixin-0IaApH_gX51c_font-family: "Futura";
+  --mixin-0IaApH_gX51c_font-family: "League Spartan", sans-serif;
   --mixin-0IaApH_gX51c_white-space: pre-wrap;
   --mixin-39H0liNlL_iX_color: var(--token-NtAmdQ_kualH);
   --mixin-39H0liNlL_iX_font-size: 12px;
   --mixin-39H0liNlL_iX_font-weight: 400;
   --mixin-39H0liNlL_iX_line-height: 1.5;
-  --mixin-39H0liNlL_iX_font-family: "Futura";
+  --mixin-39H0liNlL_iX_font-family: "League Spartan", sans-serif;
   --mixin-39H0liNlL_iX_text-transform: uppercase;
   --mixin-39H0liNlL_iX_font-style: normal;
   --mixin-39H0liNlL_iX_white-space: pre-wrap;
@@ -290,6 +290,7 @@
   --mixin-5q5DpicNPGIK_white-space: pre-wrap;
   --mixin-heyWA_FmOhsk_white-space: pre-wrap;
   --mixin-hBFTLoVUm-6e_white-space: pre-wrap;
+  --mixin-OtWNsoUgQLjX_font-family: "League Spartan", sans-serif;
   --mixin-OtWNsoUgQLjX_white-space: pre-wrap;
   --mixin-3ENc6jJJRjyj_white-space: pre-wrap;
 }
@@ -869,6 +870,7 @@ em:where(.root_reset.em),
 :where(.root_reset .__wab_expr_html_text) em,
 :where(.root_reset_tags) em,
 em:where(.root_reset_tags) {
+  font-family: var(--mixin-OtWNsoUgQLjX_font-family);
 }
 
 :where(.root_reset) em:where(.em):not(:focus-visible-within),

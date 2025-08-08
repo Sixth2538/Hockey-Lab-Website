@@ -650,7 +650,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__iSenu
                   )}
                 >
-                  {"International Experience"}
+                  {
+                    "International Experience\nFIH Level\nLead by Educator\nAsian Games"
+                  }
                 </div>
               </div>
             </section>

@@ -114,11 +114,10 @@
 }
 .text {
   white-space: pre;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  color: #eff6ff;
+  color: var(--token-WHsNhxc1OvW6);
   text-align: left;
   text-transform: none;
   line-height: 1.5;

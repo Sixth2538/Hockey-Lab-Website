@@ -15,7 +15,6 @@ export interface GlobalContextsProviderProps {
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
@@ -108,18 +107,18 @@ export default function GlobalContextsProvider(
           ? antdConfigProviderProps.themeStyles!
           : hasVariant(globalVariants, "screen", "mobileOnly")
           ? {
-              fontFamily: "Futura",
+              fontFamily: "League Spartan",
               fontSize: "16px",
-              fontWeight: "300",
+              fontWeight: "200",
               lineHeight: "2",
               color: "#00263A",
               letterSpacing: "normal"
             }
           : true
           ? {
-              fontFamily: "Futura",
+              fontFamily: "League Spartan",
               fontSize: "20px",
-              fontWeight: "300",
+              fontWeight: "200",
               lineHeight: "2",
               color: "#00263A",
               letterSpacing: "normal"

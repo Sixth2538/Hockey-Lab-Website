@@ -660,9 +660,26 @@ function PlasmicHomepage__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox__sn5)}>
                 {(() => {
                   const child$Props = {
-                    arrows: false,
+                    arrowColor: hasVariant(
+                      globalVariants,
+                      "screen",
+                      "mobileOnly"
+                    )
+                      ? true
+                        ? "#FAFAFA"
+                        : undefined
+                      : undefined,
+                    arrows: hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : false,
                     autoplay: false,
-                    autoplaySpeed: 0,
+                    autoplaySpeed: hasVariant(
+                      globalVariants,
+                      "screen",
+                      "mobileOnly"
+                    )
+                      ? 2000
+                      : 0,
                     beforeChange: async (...eventArgs: any) => {
                       generateStateOnChangePropForCodeComponents(
                         $state,
@@ -671,14 +688,24 @@ function PlasmicHomepage__RenderFunc(props: {
                         SliderWrapper_Helpers
                       ).apply(null, eventArgs);
                     },
-                    centerMode: true,
+                    centerMode: hasVariant(
+                      globalVariants,
+                      "screen",
+                      "mobileOnly"
+                    )
+                      ? false
+                      : true,
                     className: classNames(
                       "__wab_instance",
                       sty.sliderCarousel2
                     ),
                     cssEase: "linear",
-                    dots: false,
-                    infinite: false,
+                    dots: hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? false
+                      : false,
+                    infinite: hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? false
+                      : false,
                     initialSlide: generateStateValueProp($state, [
                       "sliderCarousel2",
                       "currentSlide"

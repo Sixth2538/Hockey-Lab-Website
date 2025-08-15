@@ -61,6 +61,8 @@ import {
 
 import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 
+import { useScreenVariants as useScreenVariantsbcqIyMmwg5 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _bcqIYMmwg5_/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -142,6 +144,10 @@ function PlasmicTeamsCard__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsbcqIyMmwg5()
+  });
 
   return (
     <div

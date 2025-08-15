@@ -510,6 +510,11 @@
 .section__odpkc > * {
   grid-column: 4;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .section__odpkc > * {
+    grid-column: 4;
+  }
+}
 .freeBox__mWiys {
   display: flex;
   flex-direction: column;
@@ -586,6 +591,11 @@
 .coachProfileCard__esBmq:global(.__wab_instance) {
   max-width: 100%;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .coachProfileCard__esBmq:global(.__wab_instance) {
+    flex-shrink: 0;
+  }
 }
 .text__ymYb {
   font-size: 32px;

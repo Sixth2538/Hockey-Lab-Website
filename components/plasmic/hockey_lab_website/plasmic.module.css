@@ -131,6 +131,13 @@
   --plasmic-token-539-c-35: var(--token-pO-EWZheHKxz);
 }
 
+@media (min-width: 0px) and (max-width: 768px) {
+  .plasmic_tokens {
+    --token-5nf-gDqVbFjs: #00263a;
+    --plasmic-token-539-c: var(--token-5nf-gDqVbFjs);
+  }
+}
+
 .plasmic_tokens {
   --plsmc-standard-width: 800px;
   --plsmc-wide-width: 1280px;

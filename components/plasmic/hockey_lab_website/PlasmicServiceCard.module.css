@@ -23,8 +23,9 @@
   border-color: var(--token-5nf-gDqVbFjs);
 }
 .root:hover {
-  border-top-color: var(--token-NtAmdQ_kualH);
-  border-bottom-color: var(--token-NtAmdQ_kualH);
+  border-radius: var(--token-Xe6iBQTgoIds);
+  border-width: 1px;
+  border-color: var(--token-NtAmdQ_kualH);
 }
 .h4 {
   width: 100%;

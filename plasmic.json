@@ -42,7 +42,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -65,7 +66,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -92,7 +94,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "gmeH6XgPaBtkt51HunAo4g",
@@ -301,7 +304,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -324,7 +328,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -443,7 +448,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -844,7 +850,8 @@
         }
       ],
       "customFunctions": [],
-      "jsBundleThemes": []
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
     },
     {
       "projectId": "vqq2EkAzn3CTTzmF7cN3ao",
@@ -1113,6 +1120,19 @@
           "cssFilePath": "plasmic/hockey_lab_website/PlasmicServiceCard3.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "pwkDe4WdLeEP",
+          "name": "CoachProfileCard",
+          "type": "managed",
+          "projectId": "vqq2EkAzn3CTTzmF7cN3ao",
+          "renderModuleFilePath": "plasmic/hockey_lab_website/PlasmicCoachProfileCard.tsx",
+          "importSpec": {
+            "modulePath": "CoachProfileCard.tsx"
+          },
+          "cssFilePath": "plasmic/hockey_lab_website/PlasmicCoachProfileCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1302,6 +1322,31 @@
           "id": "LDVKoQ5TDNwp",
           "name": "Starr Hall Logo.svg",
           "filePath": "../public/plasmic/hockey_lab_website/images/starrHallLogoSvg.svg"
+        },
+        {
+          "id": "sO40N34crS2x",
+          "name": "Swire Hall Logo.avif",
+          "filePath": "../public/plasmic/hockey_lab_website/images/swireHallLogoAvif.avif"
+        },
+        {
+          "id": "6wKTpeQXfc3d",
+          "name": "20250727_080826_B8EEC97C.jpeg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/_20250727080826B8Eec97CJpeg.jpg"
+        },
+        {
+          "id": "0Yox9Emv-03E",
+          "name": "20240601_103603_154612FF.jpg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/_20240601103603154612FfJpg.jpg"
+        },
+        {
+          "id": "JWrCDZVVef-q",
+          "name": "20250311_170638_D8AA6F6F.jpg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/_20250311170638D8Aa6F6FJpg.jpg"
+        },
+        {
+          "id": "RJDYbWRwdDHB",
+          "name": "20240601_124803_D8109279.jpg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/_20240601124803D8109279Jpg.jpg"
         }
       ],
       "indirect": false,
@@ -1321,6 +1366,68 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": ""
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "",
+      "projectModuleFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ],
       "customFunctions": []
     }
   ],
@@ -1338,6 +1445,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.341",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.341/dist/plasmic.schema.json"
+  "cliVersion": "0.1.342",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.342/dist/plasmic.schema.json"
 }

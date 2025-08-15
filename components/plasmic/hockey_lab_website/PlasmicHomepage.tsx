@@ -65,11 +65,13 @@ import ServiceCard from "../../ServiceCard"; // plasmic-import: WpsoIcLzp7L2/com
 import ServiceCard2 from "../../ServiceCard2"; // plasmic-import: sGwmsxf_S2NU/component
 import ServiceCard3 from "../../ServiceCard3"; // plasmic-import: ofZRJvk17xGu/component
 import ProcessCard from "../../ProcessCard"; // plasmic-import: Uah7VsWpV6Q4/component
-import TeamsCard from "../../TeamsCard"; // plasmic-import: MlYa0Ac5yeND/component
-import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
+import CoachProfileCard from "../../CoachProfileCard"; // plasmic-import: pwkDe4WdLeEP/component
+import TeamsCard from "../../TeamsCard"; // plasmic-import: MlYa0Ac5yeND/component
+import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 import TestimonialCard from "../../TestimonialCard"; // plasmic-import: Qey7pJzlldRh/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantsbcqIyMmwg5 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _bcqIYMmwg5_/globalVariant
 
@@ -106,7 +108,9 @@ export type PlasmicHomepage__OverridesType = {
   serviceCard?: Flex__<typeof ServiceCard>;
   serviceCard2?: Flex__<typeof ServiceCard2>;
   serviceCard3?: Flex__<typeof ServiceCard3>;
+  sliderCarousel2?: Flex__<typeof SliderWrapper>;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
+  umamiTracking?: Flex__<typeof Embed>;
 };
 
 export interface DefaultHomepageProps {}
@@ -159,6 +163,15 @@ function PlasmicHomepage__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
         refName: "sliderCarousel",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
+      },
+      {
+        path: "sliderCarousel2.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+
+        refName: "sliderCarousel2",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -643,17 +656,184 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Coaching Team"}
                 </h2>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iSenu
-                  )}
-                >
-                  {
-                    "International Experience\nFIH Level\nLead by Educator\nAsian Games"
-                  }
-                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__sn5)}>
+                {(() => {
+                  const child$Props = {
+                    arrows: false,
+                    autoplay: false,
+                    autoplaySpeed: 0,
+                    beforeChange: async (...eventArgs: any) => {
+                      generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "currentSlide",
+                        ["sliderCarousel2", "currentSlide"],
+                        SliderWrapper_Helpers
+                      ).apply(null, eventArgs);
+                    },
+                    centerMode: true,
+                    className: classNames(
+                      "__wab_instance",
+                      sty.sliderCarousel2
+                    ),
+                    cssEase: "linear",
+                    dots: false,
+                    infinite: false,
+                    initialSlide: generateStateValueProp($state, [
+                      "sliderCarousel2",
+                      "currentSlide"
+                    ]),
+                    ref: ref => {
+                      $refs["sliderCarousel2"] = ref;
+                    },
+                    sliderScopeClassName: sty["sliderCarousel2__slider"]
+                  };
+                  initializeCodeComponentStates(
+                    $state,
+                    [
+                      {
+                        name: "currentSlide",
+                        plasmicStateName: "sliderCarousel2.currentSlide"
+                      }
+                    ],
+                    [],
+                    SliderWrapper_Helpers ?? {},
+                    child$Props
+                  );
+
+                  return (
+                    <SliderWrapper
+                      data-plasmic-name={"sliderCarousel2"}
+                      data-plasmic-override={overrides.sliderCarousel2}
+                      {...child$Props}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___3Evjz
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__wehb9
+                          )}
+                        >
+                          <CoachProfileCard
+                            className={classNames(
+                              "__wab_instance",
+                              sty.coachProfileCard__esBmq
+                            )}
+                            slot={
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__nunXl
+                                )}
+                              >
+                                {
+                                  "FIH Educator & Level 4 Coach\nGSHA (Hang Zhou) Technical Director\nFormer Hong Kong National Player"
+                                }
+                              </div>
+                            }
+                            slot2={
+                              <PlasmicImg__
+                                alt={""}
+                                className={classNames(sty.img__susF)}
+                                displayHeight={"300px"}
+                                displayMaxHeight={"none"}
+                                displayMaxWidth={"100%"}
+                                displayMinHeight={"0"}
+                                displayMinWidth={"0"}
+                                displayWidth={"300px"}
+                                loading={"lazy"}
+                                src={{
+                                  src: "/plasmic/hockey_lab_website/images/_20240601124803D8109279Jpg.jpg",
+                                  fullWidth: 5184,
+                                  fullHeight: 3456,
+                                  aspectRatio: undefined
+                                }}
+                              />
+                            }
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__ymYb
+                              )}
+                            >
+                              {"Jackie Chan"}
+                            </div>
+                          </CoachProfileCard>
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ddJpq
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__dJpvt
+                          )}
+                        >
+                          <CoachProfileCard
+                            className={classNames(
+                              "__wab_instance",
+                              sty.coachProfileCard__vm2Mg
+                            )}
+                            slot={
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___5DTif
+                                )}
+                              >
+                                {
+                                  "FIH Educator & Level 4 Coach\nGSHA (Hang Zhou) Technical Director\nFormer Hong Kong National Player"
+                                }
+                              </div>
+                            }
+                            slot2={
+                              <PlasmicImg__
+                                alt={""}
+                                className={classNames(sty.img___2Kq1F)}
+                                displayHeight={"300px"}
+                                displayMaxHeight={"none"}
+                                displayMaxWidth={"100%"}
+                                displayMinHeight={"0"}
+                                displayMinWidth={"0"}
+                                displayWidth={"300px"}
+                                loading={"lazy"}
+                                src={{
+                                  src: "/plasmic/hockey_lab_website/images/_20250311170638D8Aa6F6FJpg.jpg",
+                                  fullWidth: 4632,
+                                  fullHeight: 3464,
+                                  aspectRatio: undefined
+                                }}
+                              />
+                            }
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__q7Kv1
+                              )}
+                            >
+                              {"Felix Iu"}
+                            </div>
+                          </CoachProfileCard>
+                        </div>
+                      </div>
+                    </SliderWrapper>
+                  );
+                })()}
               </div>
             </section>
           </section>
@@ -677,7 +857,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__k73PE
                 )}
               >
-                {"Honor achieved by our teams & individuals"}
+                {"Honors achieved by our teams & individuals"}
               </h2>
               <div className={classNames(projectcss.all, sty.freeBox__sv5O2)}>
                 <div className={classNames(projectcss.all, sty.freeBox__t2NZc)}>
@@ -1130,9 +1310,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"auto"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
-                        fullWidth: 60,
-                        fullHeight: 73,
+                        src: "/plasmic/hockey_lab_website/images/swireHallLogoAvif.avif",
+                        fullWidth: 412,
+                        fullHeight: 386,
                         aspectRatio: undefined
                       }}
                     />
@@ -1403,7 +1583,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h6__raBeR
                 )}
               >
-                {"Customer Stories"}
+                {"Athlete Stories"}
               </h6>
               <h2
                 className={classNames(
@@ -1740,33 +1920,10 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h4__vrbHp
                     )}
                   >
-                    {"Gongshu Hockey Association\nTechnical Director"}
+                    {"Gongshu Hockey Association"}
                   </h4>
                 </div>
               </div>
-            </div>
-          </section>
-          <section className={classNames(projectcss.all, sty.section__ur9Hq)}>
-            <h2
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2__qfa37
-              )}
-            >
-              {"WE BELIEVE IN INDIVIDUALS"}
-            </h2>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__ua0I
-              )}
-            >
-              {
-                "At Hockey Lab, we are dedicated in inspiring individuals to experience the joy of field hockey. Our expert coaching team, led by a qualified FIH Educator with extensive first-hand international experience, combines their deep understanding of the game with proven strategies to deliver exceptional programs tailored to all skill levels."
-              }
             </div>
           </section>
           <div className={classNames(projectcss.all, sty.freeBox__gDk8)}>
@@ -1905,6 +2062,14 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </div>
+          <Embed
+            data-plasmic-name={"umamiTracking"}
+            data-plasmic-override={overrides.umamiTracking}
+            className={classNames("__wab_instance", sty.umamiTracking)}
+            code={
+              '<script defer src="https://umami.jome.one/script.js" data-website-id="5ceb62d9-c65e-4d36-bdb8-4f354871f828"></script>'
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -1921,7 +2086,9 @@ const PlasmicDescendants = {
     "serviceCard",
     "serviceCard2",
     "serviceCard3",
-    "sliderCarousel"
+    "sliderCarousel2",
+    "sliderCarousel",
+    "umamiTracking"
   ],
   headerNavBar: ["headerNavBar"],
   h1: ["h1"],
@@ -1930,7 +2097,9 @@ const PlasmicDescendants = {
   serviceCard: ["serviceCard"],
   serviceCard2: ["serviceCard2"],
   serviceCard3: ["serviceCard3"],
-  sliderCarousel: ["sliderCarousel"]
+  sliderCarousel2: ["sliderCarousel2"],
+  sliderCarousel: ["sliderCarousel"],
+  umamiTracking: ["umamiTracking"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1944,7 +2113,9 @@ type NodeDefaultElementType = {
   serviceCard: typeof ServiceCard;
   serviceCard2: typeof ServiceCard2;
   serviceCard3: typeof ServiceCard3;
+  sliderCarousel2: typeof SliderWrapper;
   sliderCarousel: typeof SliderWrapper;
+  umamiTracking: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2014,7 +2185,9 @@ export const PlasmicHomepage = Object.assign(
     serviceCard: makeNodeComponent("serviceCard"),
     serviceCard2: makeNodeComponent("serviceCard2"),
     serviceCard3: makeNodeComponent("serviceCard3"),
+    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
+    umamiTracking: makeNodeComponent("umamiTracking"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

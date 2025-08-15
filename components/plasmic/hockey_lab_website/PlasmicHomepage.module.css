@@ -539,14 +539,115 @@
   margin-bottom: var(--token-sOKgu1b-fMSG);
   color: var(--token-WHsNhxc1OvW6);
 }
-.text__iSenu {
+.freeBox__sn5 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: var(--token-A3nDYOJU2UKb);
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+.sliderCarousel2:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  object-fit: cover;
+  min-width: 0;
+}
+.freeBox___3Evjz {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
-  padding-bottom: 0px;
-  color: var(--token-WHsNhxc1OvW6);
+  justify-content: center;
+  align-items: center;
   min-width: 0;
+  padding: 8px;
+}
+.freeBox__wehb9 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.coachProfileCard__esBmq:global(.__wab_instance) {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.text__ymYb {
+  font-size: 32px;
+}
+.text__nunXl {
+  line-height: 2;
+  font-size: 16px;
+}
+.img__susF {
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: var(--token-Xe6iBQTgoIds);
+}
+.img__susF > picture > img {
+  object-fit: cover;
+}
+.freeBox__ddJpq {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__dJpvt {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.coachProfileCard__vm2Mg:global(.__wab_instance) {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.text__q7Kv1 {
+  font-size: 32px;
+}
+.text___5DTif {
+  line-height: 2;
+  font-size: 16px;
+}
+.img___2Kq1F {
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: var(--token-Xe6iBQTgoIds);
+}
+.img___2Kq1F > picture > img {
+  object-fit: cover;
 }
 .section__zdrLw {
   display: grid;
@@ -638,6 +739,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  color: var(--token-NtAmdQ_kualH);
   min-width: 0;
 }
 .h4__u0Pso {
@@ -667,6 +769,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  color: var(--token-NtAmdQ_kualH);
   min-width: 0;
 }
 .h4__iytX6 {
@@ -696,6 +799,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  color: var(--token-NtAmdQ_kualH);
   min-width: 0;
 }
 .h4__xupUo {
@@ -753,7 +857,7 @@
   top: auto;
   z-index: 1;
 }
-.svg__yrHoi {
+.svg__jcla4 {
   position: relative;
   height: 1em;
 }
@@ -761,7 +865,7 @@
   white-space: pre;
   color: var(--token-WHsNhxc1OvW6);
 }
-.svg__kfkRp {
+.svg__vPkga {
   position: relative;
   height: 1em;
 }
@@ -1774,45 +1878,6 @@
   max-width: 100%;
   min-width: 0;
 }
-.section__ur9Hq {
-  display: grid;
-  position: relative;
-  align-content: flex-start;
-  justify-items: center;
-  width: 100%;
-  background: var(--token-QSMo_zn0c79S);
-  grid-column-start: 1 !important;
-  grid-column-end: -1 !important;
-  grid-template-columns:
-    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
-    min(
-      var(--plsmc-standard-width),
-      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
-    )
-    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-}
-.section__ur9Hq > * {
-  grid-column: 4;
-}
-.h2__qfa37 {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  left: auto;
-  top: auto;
-  z-index: 1;
-  position: relative;
-  color: var(--token-WHsNhxc1OvW6);
-  min-width: 0;
-}
-.text__ua0I {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  color: var(--token-WHsNhxc1OvW6);
-  min-width: 0;
-}
 .freeBox__gDk8 {
   display: flex;
   flex-direction: column;
@@ -1983,4 +2048,8 @@
   .h6___9NJae {
     text-align: center;
   }
+}
+.umamiTracking:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
 }

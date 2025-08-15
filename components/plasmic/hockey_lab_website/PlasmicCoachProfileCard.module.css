@@ -1,0 +1,230 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 700px;
+  height: 360px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--token-WHsNhxc1OvW6);
+  justify-self: flex-start;
+  box-shadow: 8px 8px 0px 0px var(--token-NtAmdQ_kualH);
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  border-radius: var(--token-Xe6iBQTgoIds);
+  padding: var(--token-sOKgu1b-fMSG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 620px;
+    column-gap: 0px;
+  }
+}
+.freeBox__g3NSq {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 16px;
+}
+.img__bciLh {
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: var(--token-Xe6iBQTgoIds);
+}
+.img__bciLh > picture > img {
+  object-fit: cover;
+}
+.freeBox__buQZ {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 316px;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__buQZ {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.h3 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h3 {
+    justify-content: center;
+  }
+}
+.slotTargetChildren {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetChildren {
+    text-align: center;
+  }
+}
+.freeBox___7VTB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___7VTB {
+    justify-content: center;
+  }
+}
+.slotTargetSlot {
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .slotTargetSlot {
+    text-align: center;
+  }
+}
+.freeBox__dk4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 0px;
+}
+.freeBox__oR1DZ {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.freeBox__zEpDx {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.svg__eecwT {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.freeBox___2Bi89 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.svg__gCuyk {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.freeBox__xuYIc {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 8px 8px 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__xuYIc {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+}
+.button:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+}
+.svg__zIzP {
+  position: relative;
+  height: 1em;
+}
+.text__aGZp {
+  white-space: pre;
+  color: var(--token-WHsNhxc1OvW6);
+}
+.svg__ci3Eq {
+  position: relative;
+  height: 1em;
+}
+.text__y6D3I {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 6px;
+  font-style: italic;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__y6D3I {
+    text-align: center;
+  }
+}

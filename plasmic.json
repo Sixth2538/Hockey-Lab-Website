@@ -1220,6 +1220,11 @@
           "id": "189YLvEKZ9fA",
           "name": "FormatQuoteSvgrepoComSvgIcon",
           "moduleFilePath": "plasmic/hockey_lab_website/icons/PlasmicIcon__FormatQuoteSvgrepoComSvg.tsx"
+        },
+        {
+          "id": "pDVD-qoq9ubb",
+          "name": "WhatsappSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/hockey_lab_website/icons/PlasmicIcon__WhatsappSvgrepoComSvg.tsx"
         }
       ],
       "images": [

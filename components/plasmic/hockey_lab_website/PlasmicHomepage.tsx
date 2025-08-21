@@ -87,6 +87,7 @@ import ChevronDown2Icon from "./icons/PlasmicIcon__ChevronDown2"; // plasmic-imp
 import InstagramSvgrepoComSvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoComSvg"; // plasmic-import: aHoszmLT10rp/icon
 import FacebookSvgrepoComSvgIcon from "./icons/PlasmicIcon__FacebookSvgrepoComSvg"; // plasmic-import: c73RtLfNBEOR/icon
 import EmailSvgrepoComSvgIcon from "./icons/PlasmicIcon__EmailSvgrepoComSvg"; // plasmic-import: NnlUgWY9zufC/icon
+import WhatsappSvgrepoComSvgIcon from "./icons/PlasmicIcon__WhatsappSvgrepoComSvg"; // plasmic-import: pDVD-qoq9ubb/icon
 
 createPlasmicElementProxy;
 
@@ -668,7 +669,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__v4Wye
                     )}
                   >
-                    {"Fi"}
+                    {"Trusted by"}
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___8XfpO)}
@@ -1979,32 +1980,34 @@ function PlasmicHomepage__RenderFunc(props: {
                     }}
                   />
                 </PlasmicLink__>
-                <div className={classNames(projectcss.all, sty.freeBox__tFmfc)}>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__euVaC)}>
+                <div className={classNames(projectcss.all, sty.freeBox__o8Eyg)}>
                   <h6
                     className={classNames(
                       projectcss.all,
                       projectcss.h6,
                       projectcss.__wab_text,
-                      sty.h6__c4Lu0
+                      sty.h6__dpNt1
                     )}
                   >
                     {"Connect with us"}
                   </h6>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__ooX7R)}
+                    className={classNames(projectcss.all, sty.freeBox__wuQe8)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__fpTtx
+                        sty.link__iWNlG
                       )}
                       component={Link}
                       href={"https://www.instagram.com/hockeylabhk"}
                       platform={"nextjs"}
                     >
                       <InstagramSvgrepoComSvgIcon
-                        className={classNames(projectcss.all, sty.svg__zHRkD)}
+                        className={classNames(projectcss.all, sty.svg__aCxXm)}
                         role={"img"}
                       />
                     </PlasmicLink__>
@@ -2012,32 +2015,55 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
-                        sty.link__pz8Ud
+                        sty.link__yglAd
                       )}
                       component={Link}
                       href={"https://www.facebook.com/hockeylabhk"}
                       platform={"nextjs"}
                     >
                       <FacebookSvgrepoComSvgIcon
-                        className={classNames(projectcss.all, sty.svg__mH4WC)}
+                        className={classNames(projectcss.all, sty.svg___6DL7)}
                         role={"img"}
                       />
                     </PlasmicLink__>
-                    <PlasmicLink__
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___4EUps)}
+                  >
+                    <EmailSvgrepoComSvgIcon
+                      className={classNames(projectcss.all, sty.svg__dyuDk)}
+                      role={"img"}
+                    />
+
+                    <h6
                       className={classNames(
                         projectcss.all,
-                        projectcss.a,
-                        sty.link__e5D5M
+                        projectcss.h6,
+                        projectcss.__wab_text,
+                        sty.h6__qzZam
                       )}
-                      component={Link}
-                      href={"mailto:info@hockeylabhk.com"}
-                      platform={"nextjs"}
                     >
-                      <EmailSvgrepoComSvgIcon
-                        className={classNames(projectcss.all, sty.svg__nTgYs)}
-                        role={"img"}
-                      />
-                    </PlasmicLink__>
+                      {"info@hockeylabhk.com"}
+                    </h6>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__foxiz)}
+                  >
+                    <WhatsappSvgrepoComSvgIcon
+                      className={classNames(projectcss.all, sty.svg__ghTc6)}
+                      role={"img"}
+                    />
+
+                    <h6
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h6,
+                        projectcss.__wab_text,
+                        sty.h6__efP7
+                      )}
+                    >
+                      {"+852 5681 8188"}
+                    </h6>
                   </div>
                 </div>
               </div>
@@ -2050,7 +2076,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h6__kYHd9
                   )}
                 >
-                  {"Company"}
+                  {"Company Details"}
                 </h6>
                 <h6
                   className={classNames(
@@ -2071,16 +2097,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {"2F Le Diamant\n703-705 Nathan Road\nMong Kok"}
-                </h6>
-                <h6
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h6,
-                    projectcss.__wab_text,
-                    sty.h6___9NJae
-                  )}
-                >
-                  {"info@hockeylabhk.com"}
                 </h6>
               </div>
             </div>

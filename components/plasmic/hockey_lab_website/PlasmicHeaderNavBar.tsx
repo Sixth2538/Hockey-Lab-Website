@@ -59,7 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
 import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
@@ -68,9 +67,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectcss
 import sty from "./PlasmicHeaderNavBar.module.css"; // plasmic-import: 6Us2WCXn4WFf/css
-
-import CircleIcon from "./icons/PlasmicIcon__Circle"; // plasmic-import: gQ9GL9qi87FQ/icon
-import ChevronDown2Icon from "./icons/PlasmicIcon__ChevronDown2"; // plasmic-import: qG4-swCrl7ga/icon
 
 createPlasmicElementProxy;
 
@@ -85,9 +81,7 @@ export const PlasmicHeaderNavBar__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeaderNavBar__OverridesType = {
   root?: Flex__<"div">;
-  img?: Flex__<typeof PlasmicImg__>;
-  button?: Flex__<typeof Button>;
-  text?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
 };
 
 export interface DefaultHeaderNavBarProps {
@@ -153,124 +147,25 @@ function PlasmicHeaderNavBar__RenderFunc(props: {
         sty.root
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__vkUq6)}>
-        <PlasmicLink__
-          className={classNames(projectcss.all, projectcss.a, sty.link__hFas)}
-          component={Link}
-          href={`/`}
-          platform={"nextjs"}
-        >
-          <PlasmicImg__
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"40px"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"none"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={"auto"}
-            loading={"lazy"}
-            src={{
-              src: "/plasmic/hockey_lab_website/images/logoHorizontalMonoDarkSvg.svg",
-              fullWidth: 329.47,
-              fullHeight: 117.12,
-              aspectRatio: undefined
-            }}
-          />
-        </PlasmicLink__>
-        <div className={classNames(projectcss.all, sty.freeBox__iVd9G)}>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__ypdEy
-            )}
-            component={Link}
-            href={"https://www.plasmic.app/"}
-            platform={"nextjs"}
-          >
-            {"Company"}
-          </PlasmicLink__>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__jyO3C
-            )}
-            component={Link}
-            href={"https://www.plasmic.app/"}
-            platform={"nextjs"}
-          >
-            {"Contact"}
-          </PlasmicLink__>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__yEdga
-            )}
-            component={Link}
-            href={"https://www.plasmic.app/"}
-            platform={"nextjs"}
-          >
-            {"Log in"}
-          </PlasmicLink__>
-          <Button
-            data-plasmic-name={"button"}
-            data-plasmic-override={overrides.button}
-            className={classNames("__wab_instance", sty.button)}
-            color={"black"}
-            end={
-              <ChevronDown2Icon
-                className={classNames(projectcss.all, sty.svg__xuzyt)}
-                role={"img"}
-              />
-            }
-            label={
-              <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text
-                )}
-              >
-                {"Sign up"}
-              </div>
-            }
-            start={
-              <CircleIcon
-                className={classNames(projectcss.all, sty.svg__x6Df)}
-                role={"img"}
-              />
-            }
-          />
-        </div>
-      </div>
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "button", "text"],
-  img: ["img"],
-  button: ["button", "text"],
-  text: ["text"]
+  root: ["root", "freeBox"],
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  img: typeof PlasmicImg__;
-  button: typeof Button;
-  text: "div";
+  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -333,9 +228,7 @@ export const PlasmicHeaderNavBar = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
-    button: makeNodeComponent("button"),
-    text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicHeaderNavBar
     internalVariantProps: PlasmicHeaderNavBar__VariantProps,

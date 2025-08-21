@@ -511,8 +511,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </Reveal>
                 <Reveal
+                  cascade={false}
                   className={classNames("__wab_instance", sty.reveal__pZHrT)}
-                  delay={2000}
+                  delay={1500}
                   duration={3000}
                   triggerOnce={true}
                 >
@@ -546,8 +547,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   </ProcessCard>
                 </Reveal>
                 <Reveal
+                  cascade={false}
                   className={classNames("__wab_instance", sty.reveal__cPWy)}
-                  delay={2500}
+                  delay={2000}
                   duration={3000}
                   triggerOnce={true}
                 >
@@ -591,8 +593,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   </ProcessCard>
                 </Reveal>
                 <Reveal
+                  cascade={false}
                   className={classNames("__wab_instance", sty.reveal__aO7T)}
-                  delay={3000}
+                  delay={2500}
                   duration={3000}
                   triggerOnce={true}
                 >
@@ -1021,89 +1024,112 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Premier League Teams"}
               </h3>
               <div className={classNames(projectcss.all, sty.freeBox__qi8Hr)}>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__kd7O1)}
-                  slot={"Men's & Women's Competition"}
-                  slot2={"Antlers Hockey Club"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___4LFc3)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/anterlsLogoBlackSvg.svg",
-                        fullWidth: 528.86,
-                        fullHeight: 385.3,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__hxRaa)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button___3MEfa)}
-                    color={"blue"}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__gx9Nx
-                        )}
-                      >
-                        {"HKHA Premier League"}
-                      </div>
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__kd7O1
+                    )}
+                    slot={"Men's & Women's Competition"}
+                    slot2={"Antlers Hockey Club"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___4LFc3)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/anterlsLogoBlackSvg.svg",
+                          fullWidth: 528.86,
+                          fullHeight: 385.3,
+                          aspectRatio: undefined
+                        }}
+                      />
                     }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.teamsCard___0O4U5
-                  )}
-                  slot={"Women's Competition"}
-                  slot2={"Solis Hockey Club"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__hu7K7)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/solisLogoPng.png",
-                        fullWidth: 1535,
-                        fullHeight: 1535,
-                        aspectRatio: undefined
-                      }}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___3MEfa
+                      )}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gx9Nx
+                          )}
+                        >
+                          {"HKHA Premier League"}
+                        </div>
+                      }
                     />
-                  }
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__jpo5)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__d5Ieg)}
-                    color={"blue"}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__aeGXr
-                        )}
-                      >
-                        {"HKHA Premier League"}
-                      </div>
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard___0O4U5
+                    )}
+                    slot={"Women's Competition"}
+                    slot2={"Solis Hockey Club"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__hu7K7)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/solisLogoPng.png",
+                          fullWidth: 1535,
+                          fullHeight: 1535,
+                          aspectRatio: undefined
+                        }}
+                      />
                     }
-                  />
-                </TeamsCard>
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__d5Ieg
+                      )}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__aeGXr
+                          )}
+                        >
+                          {"HKHA Premier League"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__xM9Ke)}>
@@ -1118,226 +1144,285 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Development Teams"}
               </h3>
               <div className={classNames(projectcss.all, sty.freeBox__qL45S)}>
-                <TeamsCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.teamsCard___2Dmoe
-                  )}
-                  slot={"HKSSF Interschool Boys Competition"}
-                  slot2={"Diocesan Boys' School"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__diUhb)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
-                        fullWidth: 60,
-                        fullHeight: 73,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__m002)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__uy8GI)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yvatK
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard___2Dmoe
+                    )}
+                    slot={"HKSSF Interschool Boys Competition"}
+                    slot2={"Diocesan Boys' School"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__diUhb)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
+                          fullWidth: 60,
+                          fullHeight: 73,
+                          aspectRatio: undefined
+                        }}
+                      />
                     }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__fQd2S)}
-                  slot={"HKSSF Interschool Girls Competition"}
-                  slot2={"Heep Yunn School"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__x2F0V)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/heepYunnSchoolLogoJpg.jpg",
-                        fullWidth: 300,
-                        fullHeight: 300,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__fp5Vv)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__na5TU
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
-                    }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames(
-                    "__wab_instance",
-                    sty.teamsCard___0TnK6
-                  )}
-                  slot={"HKSSF Interschool Girls Competition"}
-                  slot2={"Sha Tin College"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qzg0Y)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/_4058885310941814707225365581507840230555648NJpg.jpg",
-                        fullWidth: 150,
-                        fullHeight: 150,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__mt1Tg)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__biMxQ
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
-                    }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__lcPPa)}
-                  slot={"HK Mini & Youth Competition"}
-                  slot2={"Tai Po Titans"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___6Vo3X)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/titansLogoJpg.jpg",
-                        fullWidth: 1241,
-                        fullHeight: 1241,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__xhqgA)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__akTnb
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
-                    }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__jfQpg)}
-                  slot={"China National U12 Youth Competition"}
-                  slot2={
-                    <div
+                  >
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xxFs
+                        "__wab_instance",
+                        sty.button__uy8GI
                       )}
-                    >
-                      {"Yucai Dengyun School"}
-                    </div>
-                  }
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__hxqnK)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/yuCaiLogoSvg.svg",
-                        fullWidth: 756.48,
-                        fullHeight: 756.48,
-                        aspectRatio: undefined
-                      }}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__yvatK
+                          )}
+                        >
+                          {"Champion"}
+                        </div>
+                      }
                     />
-                  }
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__gndYk)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__o3If6)}
-                    color={"blue"}
-                    label={
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__fQd2S
+                    )}
+                    slot={"HKSSF Interschool Girls Competition"}
+                    slot2={"Heep Yunn School"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__x2F0V)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/heepYunnSchoolLogoJpg.jpg",
+                          fullWidth: 300,
+                          fullHeight: 300,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__fp5Vv
+                      )}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__na5TU
+                          )}
+                        >
+                          {"Champion"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__buWQa)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
+                >
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard___0TnK6
+                    )}
+                    slot={"HKSSF Interschool Girls Competition"}
+                    slot2={"Sha Tin College"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__qzg0Y)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/_4058885310941814707225365581507840230555648NJpg.jpg",
+                          fullWidth: 150,
+                          fullHeight: 150,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__mt1Tg
+                      )}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__biMxQ
+                          )}
+                        >
+                          {"Champion"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__fajnt)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
+                >
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__lcPPa
+                    )}
+                    slot={"HK Mini & Youth Competition"}
+                    slot2={"Tai Po Titans"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___6Vo3X)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/titansLogoJpg.jpg",
+                          fullWidth: 1241,
+                          fullHeight: 1241,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__xhqgA
+                      )}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__akTnb
+                          )}
+                        >
+                          {"Champion"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__laow9)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
+                >
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__jfQpg
+                    )}
+                    slot={"China National U12 Youth Competition"}
+                    slot2={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___47G
+                          sty.text__xxFs
                         )}
                       >
-                        {"Runners Up"}
+                        {"Yucai Dengyun School"}
                       </div>
                     }
-                  />
-                </TeamsCard>
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__hxqnK)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/yuCaiLogoSvg.svg",
+                          fullWidth: 756.48,
+                          fullHeight: 756.48,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__o3If6
+                      )}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___47G
+                          )}
+                        >
+                          {"Runners Up"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__lWt8)}>
@@ -1352,98 +1437,121 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"HKU Hall Teams"}
               </h3>
               <div className={classNames(projectcss.all, sty.freeBox__apHx)}>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__qb2Wk)}
-                  slot={"Men's Interhall Competition"}
-                  slot2={"Swire Hall"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___8KTg7)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/swireHallLogoAvif.avif",
-                        fullWidth: 412,
-                        fullHeight: 386,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal___0K9V8)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__wNpS7)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vofIh
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__qb2Wk
+                    )}
+                    slot={"Men's Interhall Competition"}
+                    slot2={"Swire Hall"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___8KTg7)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/swireHallLogoAvif.avif",
+                          fullWidth: 412,
+                          fullHeight: 386,
+                          aspectRatio: undefined
+                        }}
+                      />
                     }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__oMYy)}
-                  slot={
-                    <div
+                  >
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0YABf
+                        "__wab_instance",
+                        sty.button__wNpS7
                       )}
-                    >
-                      {"Men's & Women's Inter-Hall Competition"}
-                    </div>
-                  }
-                  slot2={"Starr Hall"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___3KHly)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/starrHallLogoSvg.svg",
-                        fullWidth: 2000,
-                        fullHeight: 2000,
-                        aspectRatio: undefined
-                      }}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vofIh
+                          )}
+                        >
+                          {"Champion"}
+                        </div>
+                      }
                     />
-                  }
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__tfLUq)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__nv3E)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__oMYy
+                    )}
+                    slot={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__kzqTj
+                          sty.text___0YABf
                         )}
                       >
-                        {"Runners Up"}
+                        {"Men's & Women's Inter-Hall Competition"}
                       </div>
                     }
-                  />
-                </TeamsCard>
+                    slot2={"Starr Hall"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___3KHly)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/starrHallLogoSvg.svg",
+                          fullWidth: 2000,
+                          fullHeight: 2000,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames("__wab_instance", sty.button__nv3E)}
+                      color={"blue"}
+                      disabled={false}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__kzqTj
+                          )}
+                        >
+                          {"Runners Up"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__oItNx)}>
@@ -1458,176 +1566,215 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Individual Awards"}
               </h3>
               <div className={classNames(projectcss.all, sty.freeBox___91R2M)}>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__wxI97)}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__s1WFe
-                      )}
-                    >
-                      {"Player of the Tournament & Top Goal Scrorer"}
-                    </div>
-                  }
-                  slot2={"HSIEH Tsung Yu"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__edIhV)}
-                      displayHeight={"50px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"50px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/chinesTaipeiFlagPng.png",
-                        fullWidth: 255,
-                        fullHeight: 170,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal___2Aoj2)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__k6OWl)}
-                    color={"blue"}
-                    label={
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__wxI97
+                    )}
+                    slot={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__lgTbM
+                          sty.text__s1WFe
                         )}
                       >
-                        {"AHF Cup & HKG Quadrangular"}
+                        {"Player of the Tournament & Top Goal Scrorer"}
                       </div>
                     }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__o4Xq)}
-                  slot={
-                    <div
+                    slot2={"HSIEH Tsung Yu"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__edIhV)}
+                        displayHeight={"50px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"50px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/chinesTaipeiFlagPng.png",
+                          fullWidth: 255,
+                          fullHeight: 170,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___1EL9U
+                        "__wab_instance",
+                        sty.button__k6OWl
                       )}
-                    >
-                      {"Player of the Tournament"}
-                    </div>
-                  }
-                  slot2={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vDjC3
-                      )}
-                    >
-                      {"HUANG Yu Ting"}
-                    </div>
-                  }
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__hfy2C)}
-                      displayHeight={"50px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"50px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/chinesTaipeiFlagPng.png",
-                        fullWidth: 255,
-                        fullHeight: 170,
-                        aspectRatio: undefined
-                      }}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lgTbM
+                          )}
+                        >
+                          {"AHF Cup & HKG Quadrangular"}
+                        </div>
+                      }
                     />
-                  }
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__yDcHp)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
                 >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__nmqze)}
-                    color={"blue"}
-                    label={
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__o4Xq
+                    )}
+                    slot={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__ccFzV
+                          sty.text___1EL9U
                         )}
                       >
-                        {"Junior AHF Cup"}
+                        {"Player of the Tournament"}
                       </div>
                     }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames("__wab_instance", sty.teamsCard__w7Up)}
-                  slot={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__furMd
-                      )}
-                    >
-                      {"Most Valuable Player"}
-                    </div>
-                  }
-                  slot2={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hl53N
-                      )}
-                    >
-                      {"IU Chi Him, Felix"}
-                    </div>
-                  }
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__cGq0N)}
-                      displayHeight={"50px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"50px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/hkSvg.svg",
-                        fullWidth: 640,
-                        fullHeight: 480,
-                        aspectRatio: 1.333333
-                      }}
-                    />
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__iwpwj)}
-                    color={"blue"}
-                    label={
+                    slot2={
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__bwLqP
+                          sty.text__vDjC3
                         )}
                       >
-                        {"Melbourne Cup"}
+                        {"HUANG Yu Ting"}
                       </div>
                     }
-                  />
-                </TeamsCard>
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__hfy2C)}
+                        displayHeight={"50px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"50px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/chinesTaipeiFlagPng.png",
+                          fullWidth: 255,
+                          fullHeight: 170,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__nmqze
+                      )}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ccFzV
+                          )}
+                        >
+                          {"Junior AHF Cup"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
+                <Reveal
+                  className={classNames("__wab_instance", sty.reveal__xsBD)}
+                  delay={500}
+                  effect={"zoom"}
+                  triggerOnce={true}
+                >
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__w7Up
+                    )}
+                    slot={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__furMd
+                        )}
+                      >
+                        {"Most Valuable Player"}
+                      </div>
+                    }
+                    slot2={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hl53N
+                        )}
+                      >
+                        {"IU Chi Him, Felix"}
+                      </div>
+                    }
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__cGq0N)}
+                        displayHeight={"50px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"50px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/hkSvg.svg",
+                          fullWidth: 640,
+                          fullHeight: 480,
+                          aspectRatio: 1.333333
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__iwpwj
+                      )}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__bwLqP
+                          )}
+                        >
+                          {"Melbourne Cup"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
+                </Reveal>
               </div>
             </div>
           </section>
@@ -2076,7 +2223,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h6__kYHd9
                   )}
                 >
-                  {"Company Details"}
+                  {"Company INFO"}
                 </h6>
                 <h6
                   className={classNames(

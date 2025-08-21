@@ -59,11 +59,12 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import { useScreenVariants as useScreenVariantsbcqIyMmwg5 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _bcqIYMmwg5_/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
+import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectcss
 import sty from "./PlasmicServiceCard3.module.css"; // plasmic-import: ofZRJvk17xGu/css
 
@@ -161,9 +162,10 @@ function PlasmicServiceCard3__RenderFunc(props: {
     hover_root: isRootHover
   };
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsbcqIyMmwg5()
-  });
+  const globalVariants = _useGlobalVariants();
+  const styleTokensClassNames = _useStyleTokens();
+  const styleTokensClassNames_antd_5_hostless =
+    useStyleTokens_antd_5_hostless();
 
   return (
     <div
@@ -176,8 +178,8 @@ function PlasmicServiceCard3__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
+        styleTokensClassNames,
+        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
       data-plasmic-trigger-props={[triggerRootHoverProps]}

@@ -60,10 +60,12 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
+import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectcss
 import sty from "./PlasmicCoachProfileCard.module.css"; // plasmic-import: pwkDe4WdLeEP/css
 
@@ -82,12 +84,14 @@ export type PlasmicCoachProfileCard__ArgsType = {
   slot2?: React.ReactNode;
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot3?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicCoachProfileCard__ArgsType;
 export const PlasmicCoachProfileCard__ArgProps = new Array<ArgPropType>(
   "slot2",
   "children",
-  "slot"
+  "slot",
+  "slot3"
 );
 
 export type PlasmicCoachProfileCard__OverridesType = {
@@ -101,6 +105,7 @@ export interface DefaultCoachProfileCardProps {
   slot2?: React.ReactNode;
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot3?: React.ReactNode;
   className?: string;
 }
 
@@ -143,6 +148,10 @@ function PlasmicCoachProfileCard__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const styleTokensClassNames = _useStyleTokens();
+  const styleTokensClassNames_antd_5_hostless =
+    useStyleTokens_antd_5_hostless();
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -154,8 +163,8 @@ function PlasmicCoachProfileCard__RenderFunc(props: {
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
-        projectcss.plasmic_tokens,
-        plasmic_antd_5_hostless_css.plasmic_tokens,
+        styleTokensClassNames,
+        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
     >
@@ -206,12 +215,37 @@ function PlasmicCoachProfileCard__RenderFunc(props: {
         </div>
         <div className={classNames(projectcss.all, sty.freeBox__dk4)}>
           <div className={classNames(projectcss.all, sty.freeBox__oR1DZ)}>
+            {renderPlasmicSlot({
+              defaultContents: (
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__osCgC)}
+                  displayHeight={"40px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/hockey_lab_website/images/fihLogoSvg.svg",
+                    fullWidth: 291.02,
+                    fullHeight: 151.18,
+                    aspectRatio: undefined
+                  }}
+                />
+              ),
+
+              value: args.slot3
+            })}
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__zEpDx)}>
             <PlasmicImg__
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
               alt={""}
               className={classNames(sty.img)}
-              displayHeight={"auto"}
+              displayHeight={"40px"}
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
@@ -219,23 +253,11 @@ function PlasmicCoachProfileCard__RenderFunc(props: {
               displayWidth={"auto"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/hockey_lab_website/images/fihLogoSvg.svg",
-                fullWidth: 291.02,
-                fullHeight: 151.18,
+                src: "/plasmic/hockey_lab_website/images/stJohnLogoSvg.svg",
+                fullWidth: 86,
+                fullHeight: 70,
                 aspectRatio: undefined
               }}
-            />
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__zEpDx)}>
-            <svg
-              className={classNames(projectcss.all, sty.svg__eecwT)}
-              role={"img"}
-            />
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox___2Bi89)}>
-            <svg
-              className={classNames(projectcss.all, sty.svg__gCuyk)}
-              role={"img"}
             />
           </div>
         </div>
@@ -253,7 +275,7 @@ function PlasmicCoachProfileCard__RenderFunc(props: {
                   sty.text__aGZp
                 )}
               >
-                {"BOOK NOW"}
+                {"bOOK NOW"}
               </div>
             }
           />

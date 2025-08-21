@@ -72,12 +72,12 @@ import TeamsCard from "../../TeamsCard"; // plasmic-import: MlYa0Ac5yeND/compone
 import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 import TestimonialCard from "../../TestimonialCard"; // plasmic-import: Qey7pJzlldRh/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
-
-import { useScreenVariants as useScreenVariantsbcqIyMmwg5 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _bcqIYMmwg5_/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
+import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 1yiwtfdP4kH3/css
 
@@ -111,6 +111,7 @@ export type PlasmicHomepage__OverridesType = {
   sliderCarousel2?: Flex__<typeof SliderWrapper>;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
   umamiTracking?: Flex__<typeof Embed>;
+  formbricksSdk?: Flex__<typeof Embed>;
 };
 
 export interface DefaultHomepageProps {}
@@ -184,9 +185,10 @@ function PlasmicHomepage__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsbcqIyMmwg5()
-  });
+  const globalVariants = _useGlobalVariants();
+  const styleTokensClassNames = _useStyleTokens();
+  const styleTokensClassNames_antd_5_hostless =
+    useStyleTokens_antd_5_hostless();
 
   return (
     <React.Fragment>
@@ -209,8 +211,8 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
+            styleTokensClassNames,
+            styleTokensClassNames_antd_5_hostless,
             sty.root
           )}
         >
@@ -450,7 +452,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   </span>
                   <React.Fragment>
                     {
-                      ", training is adapted to individual needs at every stage. Our coaches expertly craft engaging sessions using scientific principles, ensuring specificity, progressive overload, and maintaining motivation for athletes of all ages and abilities."
+                      "\nHere at Hockey Lab we take a player-centered approach to field hockey training, adapting programs to meet individual needs at every stage of development. Our coaches expertly craft engaging sessions grounded in scientific principles, driving improvement and sustaining motivation for athletes of all ages and skill levels."
                     }
                   </React.Fragment>
                 </React.Fragment>
@@ -656,6 +658,125 @@ function PlasmicHomepage__RenderFunc(props: {
                 >
                   {"Coaching Team"}
                 </h2>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___2HTlI)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__v4Wye
+                    )}
+                  >
+                    {"Fi"}
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___8XfpO)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__sumn)}
+                    >
+                      <Reveal
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__rYvrJ
+                        )}
+                        delay={1000}
+                        effect={"slide"}
+                        triggerOnce={true}
+                      >
+                        <h3
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h3,
+                            projectcss.__wab_text,
+                            sty.h3___1YHq9
+                          )}
+                        >
+                          {"35+"}
+                        </h3>
+                      </Reveal>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__nrVm2
+                        )}
+                      >
+                        {"Schools & Teams"}
+                      </h4>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__tZcUa)}
+                    >
+                      <Reveal
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__oPwtm
+                        )}
+                        delay={2000}
+                        effect={"slide"}
+                        triggerOnce={true}
+                      >
+                        <h3
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h3,
+                            projectcss.__wab_text,
+                            sty.h3__kDxCg
+                          )}
+                        >
+                          {"300+"}
+                        </h3>
+                      </Reveal>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__lyyPw
+                        )}
+                      >
+                        {"Students"}
+                      </h4>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ui0Bq)}
+                    >
+                      <Reveal
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__nTMqH
+                        )}
+                        delay={3000}
+                        effect={"slide"}
+                        triggerOnce={true}
+                      >
+                        <h3
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h3,
+                            projectcss.__wab_text,
+                            sty.h3__tTmJm
+                          )}
+                        >
+                          {"20+"}
+                        </h3>
+                      </Reveal>
+                      <h4
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h4,
+                          projectcss.__wab_text,
+                          sty.h4__rHaGk
+                        )}
+                      >
+                        {"Team & Individual Awards"}
+                      </h4>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__sn5)}>
                 {(() => {
@@ -822,7 +943,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 )}
                               >
                                 {
-                                  "FIH Educator & Level 4 Coach\nGSHA (Hang Zhou) Technical Director\nFormer Hong Kong National Player"
+                                  "FIH Level 2 Coach\nCurrent Hong Kong National Player"
                                 }
                               </div>
                             }
@@ -884,99 +1005,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__k73PE
                 )}
               >
-                {"Honors achieved by our teams & individuals"}
+                {"Honors achieved"}
               </h2>
-              <div className={classNames(projectcss.all, sty.freeBox__sv5O2)}>
-                <div className={classNames(projectcss.all, sty.freeBox__t2NZc)}>
-                  <Reveal
-                    className={classNames("__wab_instance", sty.reveal__jWcHs)}
-                    delay={1000}
-                    effect={"slide"}
-                    triggerOnce={true}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__hLwOo
-                      )}
-                    >
-                      {"35+"}
-                    </h3>
-                  </Reveal>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__u0Pso
-                    )}
-                  >
-                    {"Schools & Teams"}
-                  </h4>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__oEnPs)}>
-                  <Reveal
-                    className={classNames("__wab_instance", sty.reveal__viIUv)}
-                    delay={2000}
-                    effect={"slide"}
-                    triggerOnce={true}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__xoTyQ
-                      )}
-                    >
-                      {"300+"}
-                    </h3>
-                  </Reveal>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__iytX6
-                    )}
-                  >
-                    {"Students"}
-                  </h4>
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___6UO8N)}
-                >
-                  <Reveal
-                    className={classNames("__wab_instance", sty.reveal__yjoBo)}
-                    delay={3000}
-                    effect={"slide"}
-                    triggerOnce={true}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__fGaUl
-                      )}
-                    >
-                      {"20+"}
-                    </h3>
-                  </Reveal>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__xupUo
-                    )}
-                  >
-                    {"Team & Individual Awards"}
-                  </h4>
-                </div>
-              </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__sZm0E)}>
               <h3
@@ -1025,7 +1055,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__gx9Nx
                         )}
                       >
-                        {"Premier League"}
+                        {"HKHA Premier League"}
                       </div>
                     }
                   />
@@ -1068,7 +1098,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__aeGXr
                         )}
                       >
-                        {"Premier League"}
+                        {"HKHA Premier League"}
                       </div>
                     }
                   />
@@ -1088,8 +1118,52 @@ function PlasmicHomepage__RenderFunc(props: {
               </h3>
               <div className={classNames(projectcss.all, sty.freeBox__qL45S)}>
                 <TeamsCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.teamsCard___2Dmoe
+                  )}
+                  slot={"HKSSF Interschool Boys Competition"}
+                  slot2={"Diocesan Boys' School"}
+                  slot3={
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__diUhb)}
+                      displayHeight={"60px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
+                        fullWidth: 60,
+                        fullHeight: 73,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  }
+                >
+                  <Button
+                    className={classNames("__wab_instance", sty.button__uy8GI)}
+                    color={"blue"}
+                    disabled={false}
+                    label={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__yvatK
+                        )}
+                      >
+                        {"Champion"}
+                      </div>
+                    }
+                  />
+                </TeamsCard>
+                <TeamsCard
                   className={classNames("__wab_instance", sty.teamsCard__fQd2S)}
-                  slot={"HKSSF Interschool Competition"}
+                  slot={"HKSSF Interschool Girls Competition"}
                   slot2={"Heep Yunn School"}
                   slot3={
                     <PlasmicImg__
@@ -1131,53 +1205,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 <TeamsCard
                   className={classNames(
                     "__wab_instance",
-                    sty.teamsCard___2Dmoe
-                  )}
-                  slot={"HKSSF Interschool Competition"}
-                  slot2={"Diocesan Boys' School"}
-                  slot3={
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__diUhb)}
-                      displayHeight={"60px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/hockey_lab_website/images/diocesanBoysSchoolLogoPng.png",
-                        fullWidth: 60,
-                        fullHeight: 73,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__uy8GI)}
-                    color={"blue"}
-                    disabled={false}
-                    label={
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yvatK
-                        )}
-                      >
-                        {"Champion"}
-                      </div>
-                    }
-                  />
-                </TeamsCard>
-                <TeamsCard
-                  className={classNames(
-                    "__wab_instance",
                     sty.teamsCard___0TnK6
                   )}
-                  slot={"HKSSF Interschool Competition"}
+                  slot={"HKSSF Interschool Girls Competition"}
                   slot2={"Sha Tin College"}
                   slot3={
                     <PlasmicImg__
@@ -1218,7 +1248,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </TeamsCard>
                 <TeamsCard
                   className={classNames("__wab_instance", sty.teamsCard__lcPPa)}
-                  slot={"HK Developmental Competition"}
+                  slot={"HK Mini & Youth Competition"}
                   slot2={"Tai Po Titans"}
                   slot3={
                     <PlasmicImg__
@@ -1620,7 +1650,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__sIjP
                 )}
               >
-                {"Hear what they have to say"}
+                {"Don't Just Take Our Word For It..."}
               </h2>
             </div>
             {(() => {
@@ -1771,7 +1801,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h6__ehpXk
                 )}
               >
-                {"Our Promise"}
+                {"Our Commitment to Excellence"}
               </h6>
               <h2
                 className={classNames(
@@ -1781,114 +1811,80 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__h0B2G
                 )}
               >
-                {"continuous coaching improvement"}
+                {"Lifelong Learning"}
               </h2>
             </div>
-            <div className={classNames(projectcss.all, sty.freeBox__fUyyp)}>
-              <div className={classNames(projectcss.all, sty.freeBox__rM2Pl)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img___6RMI)}
-                  displayHeight={"100px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"200px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/hockey_lab_website/images/fihLogoSvg.svg",
-                    fullWidth: 291.02,
-                    fullHeight: 151.18,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__tJtXv)}>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__w3B
-                    )}
-                  >
-                    {"Level 4 Coach"}
-                  </h4>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__yoZtU
-                    )}
-                  >
-                    {"Coach Educator"}
-                  </h4>
-                </div>
+            <div className={classNames(projectcss.all, sty.freeBox___9PozE)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__dObbD
+                )}
+              >
+                {
+                  "We believe in the power of continuous learning and are committed to ongoing professional development, mirroring the dedication we bring to educating our athletes. Our coaches regularly collaborate, attend international courses, and actively seek to expand their knowledge beyond hockey to enhance their training approach."
+                }
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox___0UaT7)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__dv7DC)}
-                  displayHeight={"100px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"200px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/hockey_lab_website/images/ahfLogoSvg.svg",
-                    fullWidth: 264.45,
-                    fullHeight: 52.492,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__dwqQp)}>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__mVXmM
-                    )}
-                  >
-                    {"High Performance GK"}
-                  </h4>
+              <div className={classNames(projectcss.all, sty.freeBox__fUyyp)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___0UaT7)}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__dv7DC)}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"200px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/hockey_lab_website/images/ahfLogoSvg.svg",
+                      fullWidth: 264.45,
+                      fullHeight: 52.492,
+                      aspectRatio: undefined
+                    }}
+                  />
                 </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__sizT4)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__qzkf9)}
-                  displayHeight={"100px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"200px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/hockey_lab_website/images/stJohnLogoSvg.svg",
-                    fullWidth: 86,
-                    fullHeight: 70,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <div className={classNames(projectcss.all, sty.freeBox__gPqnq)}>
-                  <h4
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h4,
-                      projectcss.__wab_text,
-                      sty.h4__eTi62
-                    )}
-                  >
-                    {"First Aid Certified"}
-                  </h4>
+                <div className={classNames(projectcss.all, sty.freeBox__rM2Pl)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___6RMI)}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"200px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/hockey_lab_website/images/fihLogoSvg.svg",
+                      fullWidth: 291.02,
+                      fullHeight: 151.18,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__sizT4)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__qzkf9)}
+                    displayHeight={"100px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"200px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/hockey_lab_website/images/stJohnLogoSvg.svg",
+                      fullWidth: 86,
+                      fullHeight: 70,
+                      aspectRatio: undefined
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -1947,7 +1943,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h4__vrbHp
                     )}
                   >
-                    {"Gongshu Hockey Association"}
+                    {"Gongshu Hockey Association (Hang Zhou)"}
                   </h4>
                 </div>
               </div>
@@ -2097,6 +2093,15 @@ function PlasmicHomepage__RenderFunc(props: {
               '<script defer src="https://umami.jome.one/script.js" data-website-id="5ceb62d9-c65e-4d36-bdb8-4f354871f828"></script>'
             }
           />
+
+          <Embed
+            data-plasmic-name={"formbricksSdk"}
+            data-plasmic-override={overrides.formbricksSdk}
+            className={classNames("__wab_instance", sty.formbricksSdk)}
+            code={
+              '<!-- START Formbricks Surveys -->\n<script type="text/javascript">\n!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://forms.hockeylabhk.com/js/formbricks.umd.cjs",t.onload=function(){window.formbricks?window.formbricks.setup({environmentId:"cmdwxz7kv0007uf01ckm0gn18",appUrl:"https://forms.hockeylabhk.com"}):console.error("Formbricks library failed to load properly. The formbricks object is not available.");};var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();\n</script>\n<!-- END Formbricks Surveys -->'
+            }
+          />
         </div>
       </div>
     </React.Fragment>
@@ -2115,7 +2120,8 @@ const PlasmicDescendants = {
     "serviceCard3",
     "sliderCarousel2",
     "sliderCarousel",
-    "umamiTracking"
+    "umamiTracking",
+    "formbricksSdk"
   ],
   headerNavBar: ["headerNavBar"],
   h1: ["h1"],
@@ -2126,7 +2132,8 @@ const PlasmicDescendants = {
   serviceCard3: ["serviceCard3"],
   sliderCarousel2: ["sliderCarousel2"],
   sliderCarousel: ["sliderCarousel"],
-  umamiTracking: ["umamiTracking"]
+  umamiTracking: ["umamiTracking"],
+  formbricksSdk: ["formbricksSdk"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2143,6 +2150,7 @@ type NodeDefaultElementType = {
   sliderCarousel2: typeof SliderWrapper;
   sliderCarousel: typeof SliderWrapper;
   umamiTracking: typeof Embed;
+  formbricksSdk: typeof Embed;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2215,6 +2223,7 @@ export const PlasmicHomepage = Object.assign(
     sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
     umamiTracking: makeNodeComponent("umamiTracking"),
+    formbricksSdk: makeNodeComponent("formbricksSdk"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

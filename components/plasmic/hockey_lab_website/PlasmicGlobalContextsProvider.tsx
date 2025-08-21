@@ -16,7 +16,6 @@ export interface GlobalContextsProviderProps {
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
@@ -116,7 +115,7 @@ export default function GlobalContextsProvider(
           : true
           ? {
               fontFamily: "League Spartan",
-              fontSize: "20px",
+              fontSize: "18px",
               fontWeight: "200",
               lineHeight: "2",
               color: "#00263A",

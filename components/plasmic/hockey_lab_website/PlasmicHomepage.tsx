@@ -59,7 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import HeaderNavBar from "../../HeaderNavBar"; // plasmic-import: 6Us2WCXn4WFf/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import ServiceCard from "../../ServiceCard"; // plasmic-import: WpsoIcLzp7L2/component
 import ServiceCard2 from "../../ServiceCard2"; // plasmic-import: sGwmsxf_S2NU/component
@@ -102,7 +101,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  headerNavBar?: Flex__<typeof HeaderNavBar>;
   h1?: Flex__<"h1">;
   blockquote?: Flex__<"blockquote">;
   columns?: Flex__<"div">;
@@ -218,12 +216,25 @@ function PlasmicHomepage__RenderFunc(props: {
           )}
         >
           <section className={classNames(projectcss.all, sty.section__h7So)}>
-            <HeaderNavBar
-              data-plasmic-name={"headerNavBar"}
-              data-plasmic-override={overrides.headerNavBar}
-              className={classNames("__wab_instance", sty.headerNavBar)}
-            />
-
+            <div className={classNames(projectcss.all, sty.freeBox__kesXx)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__fSfc)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"100px"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/hockey_lab_website/images/logoHorizontalMonoDarkSvg.svg",
+                  fullWidth: 329.47,
+                  fullHeight: 117.12,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
             <div className={classNames(projectcss.all, sty.freeBox__bUueP)}>
               <div className={classNames(projectcss.all, sty.freeBox___9A39Q)}>
                 <PlasmicImg__
@@ -1027,6 +1038,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__hxRaa)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1080,6 +1092,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__jpo5)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1147,6 +1160,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__m002)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1201,6 +1215,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__gndYk)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1255,6 +1270,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__buWQa)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1309,6 +1325,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__fajnt)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1363,6 +1380,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__laow9)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1440,6 +1458,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal___0K9V8)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1494,6 +1513,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__tfLUq)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1569,6 +1589,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal___2Aoj2)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1632,6 +1653,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__yDcHp)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -1705,6 +1727,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <Reveal
                   className={classNames("__wab_instance", sty.reveal__xsBD)}
                   delay={500}
+                  duration={2000}
                   effect={"zoom"}
                   triggerOnce={true}
                 >
@@ -2274,7 +2297,6 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "headerNavBar",
     "h1",
     "blockquote",
     "columns",
@@ -2286,7 +2308,6 @@ const PlasmicDescendants = {
     "umamiTracking",
     "formbricksSdk"
   ],
-  headerNavBar: ["headerNavBar"],
   h1: ["h1"],
   blockquote: ["blockquote"],
   columns: ["columns", "serviceCard", "serviceCard2", "serviceCard3"],
@@ -2303,7 +2324,6 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  headerNavBar: typeof HeaderNavBar;
   h1: "h1";
   blockquote: "blockquote";
   columns: "div";
@@ -2376,7 +2396,6 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    headerNavBar: makeNodeComponent("headerNavBar"),
     h1: makeNodeComponent("h1"),
     blockquote: makeNodeComponent("blockquote"),
     columns: makeNodeComponent("columns"),

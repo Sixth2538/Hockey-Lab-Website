@@ -896,7 +896,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 )}
                               >
                                 {
-                                  "FIH Educator & Level 4 Coach\nGSHA (Hang Zhou) Technical Director\nFormer Hong Kong National Player"
+                                  "FIH Educator & Level 4 Coach\nGSHA (Hangzhou) Technical Director\nFormer Hong Kong National Player"
                                 }
                               </div>
                             }
@@ -1020,7 +1020,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__k73PE
                 )}
               >
-                {"Honors achieved"}
+                {""}
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__sZm0E)}>
@@ -1042,6 +1042,49 @@ function PlasmicHomepage__RenderFunc(props: {
                   effect={"zoom"}
                   triggerOnce={true}
                 >
+                  <TeamsCard
+                    className={classNames(
+                      "__wab_instance",
+                      sty.teamsCard__ooD8A
+                    )}
+                    slot={"Men's League & Cup Champaion"}
+                    slot2={"Khalsa Hockey Club"}
+                    slot3={
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___1DOj)}
+                        displayHeight={"60px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/hockey_lab_website/images/khalsaPng.png",
+                          fullWidth: 858,
+                          fullHeight: 900,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    }
+                  >
+                    <Button
+                      className={classNames("__wab_instance", sty.button__wYbF)}
+                      color={"blue"}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__qkLe0
+                          )}
+                        >
+                          {"HKHA Premier League"}
+                        </div>
+                      }
+                    />
+                  </TeamsCard>
                   <TeamsCard
                     className={classNames(
                       "__wab_instance",

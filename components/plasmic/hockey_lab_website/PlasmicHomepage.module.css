@@ -1813,6 +1813,7 @@
   height: auto;
   max-width: 100%;
   flex-wrap: wrap;
+  row-gap: 16px;
   min-width: 0;
   padding: 8px;
 }

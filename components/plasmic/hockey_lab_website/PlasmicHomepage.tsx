@@ -1020,7 +1020,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__k73PE
                 )}
               >
-                {""}
+                {"Team & Individual Honors"}
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__sZm0E)}>

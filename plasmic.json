@@ -1357,6 +1357,16 @@
           "id": "Nyy_IkYQNMI2",
           "name": "Khalsa.png",
           "filePath": "../public/plasmic/hockey_lab_website/images/khalsaPng.png"
+        },
+        {
+          "id": "x97vjW2vJ99p",
+          "name": "Naked Logo Black.svg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/nakedLogoBlackSvg.svg"
+        },
+        {
+          "id": "XDZee1M0k6dL",
+          "name": "Original on transparent Optimised.svg",
+          "filePath": "../public/plasmic/hockey_lab_website/images/originalOnTransparentOptimisedSvg.svg"
         }
       ],
       "indirect": false,
@@ -1452,9 +1462,10 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
+  "preserveJsImportExtensions": false,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.342",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.342/dist/plasmic.schema.json"
+  "cliVersion": "0.1.348",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.348/dist/plasmic.schema.json"
 }

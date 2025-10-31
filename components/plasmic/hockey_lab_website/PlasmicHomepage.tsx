@@ -73,7 +73,6 @@ import TestimonialCard from "../../TestimonialCard"; // plasmic-import: Qey7pJzl
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -154,6 +153,8 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
     () => [
       {
@@ -184,10 +185,7 @@ function PlasmicHomepage__RenderFunc(props: {
     $refs
   });
 
-  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   return (
     <React.Fragment>
@@ -211,7 +209,6 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless,
             sty.root
           )}
         >
@@ -324,9 +321,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   typeof $steps["updateStateVariable"] === "object" &&
                   typeof $steps["updateStateVariable"].then === "function"
                 ) {
-                  $steps["updateStateVariable"] = await $steps[
-                    "updateStateVariable"
-                  ];
+                  $steps["updateStateVariable"] =
+                    await $steps["updateStateVariable"];
                 }
               }}
               onScroll={async event => {
@@ -354,9 +350,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   typeof $steps["updateStateVariable"] === "object" &&
                   typeof $steps["updateStateVariable"].then === "function"
                 ) {
-                  $steps["updateStateVariable"] = await $steps[
-                    "updateStateVariable"
-                  ];
+                  $steps["updateStateVariable"] =
+                    await $steps["updateStateVariable"];
                 }
               }}
               platform={"nextjs"}
@@ -2127,6 +2122,40 @@ function PlasmicHomepage__RenderFunc(props: {
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__xkUVz)}>
+              <div className={classNames(projectcss.all, sty.freeBox__cdj9P)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__o67WU)}
+                  displayHeight={"100px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/hockey_lab_website/images/originalOnTransparentOptimisedSvg.svg",
+                    fullWidth: 5000,
+                    fullHeight: 1528.7,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___8Az9D)}
+                >
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__yMigC
+                    )}
+                  >
+                    {"AlignFit Physiotherapy Centre"}
+                  </h4>
+                </div>
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__x7Fx6)}>
                 <PlasmicImg__
                   alt={""}
@@ -2158,6 +2187,40 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {"Gongshu Hockey Association (Hang Zhou)"}
+                  </h4>
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__hZs6H)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gs2Hc)}
+                  displayHeight={"100px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"200px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/hockey_lab_website/images/nakedLogoBlackSvg.svg",
+                    fullWidth: 152.42,
+                    fullHeight: 28.268,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3H4Io)}
+                >
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__l1OxQ
+                    )}
+                  >
+                    {"Naked Field Hockey"}
                   </h4>
                 </div>
               </div>
@@ -2390,7 +2453,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHomepage__VariantsArgs;
     args?: PlasmicHomepage__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicHomepage__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicHomepage__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicHomepage__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

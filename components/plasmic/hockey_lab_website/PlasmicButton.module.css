@@ -52,10 +52,8 @@
   background: var(--token-evhIctAS0lR0);
 }
 .rootcolor_blue:global(.__wab_instance) {
-  background: linear-gradient(
-      var(--token-5nf-gDqVbFjs),
-      var(--token-5nf-gDqVbFjs)
-    ),
+  background:
+    linear-gradient(var(--token-5nf-gDqVbFjs), var(--token-5nf-gDqVbFjs)),
     #2563eb;
   cursor: default;
 }

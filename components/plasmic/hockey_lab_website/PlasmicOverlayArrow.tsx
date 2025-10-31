@@ -62,7 +62,6 @@ import {
 import { BaseOverlayArrow } from "@plasmicpkgs/react-aria/skinny/registerOverlayArrow";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -156,8 +155,6 @@ function PlasmicOverlayArrow__RenderFunc(props: {
   });
 
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   const [$ccVariants, setDollarCcVariants] = React.useState<
     Record<string, boolean>
@@ -190,7 +187,6 @@ function PlasmicOverlayArrow__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root,
         { [sty.rootdark]: hasVariant($state, "dark", "dark") }
       )}
@@ -231,7 +227,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicOverlayArrow__VariantsArgs;
     args?: PlasmicOverlayArrow__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicOverlayArrow__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicOverlayArrow__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicOverlayArrow__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

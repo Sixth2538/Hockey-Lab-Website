@@ -65,7 +65,6 @@ import { BaseModal } from "@plasmicpkgs/react-aria/skinny/registerModal";
 import { BaseDialog } from "@plasmicpkgs/react-aria/skinny/registerDialog";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -214,8 +213,6 @@ function PlasmicModal__RenderFunc(props: {
   });
 
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   return (
     <BaseDialogTrigger
@@ -229,7 +226,6 @@ function PlasmicModal__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.ariaDialogTrigger,
         {
           [sty.ariaDialogTriggernoTrigger]: hasVariant(
@@ -268,8 +264,7 @@ function PlasmicModal__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless
+            styleTokensClassNames
           )}
         >
           <BaseDialog
@@ -385,9 +380,8 @@ function PlasmicModal__RenderFunc(props: {
                         typeof $steps["updateAriaDialogTriggerIsOpen"].then ===
                           "function"
                       ) {
-                        $steps["updateAriaDialogTriggerIsOpen"] = await $steps[
-                          "updateAriaDialogTriggerIsOpen"
-                        ];
+                        $steps["updateAriaDialogTriggerIsOpen"] =
+                          await $steps["updateAriaDialogTriggerIsOpen"];
                       }
                     }}
                     type={"soft"}
@@ -451,7 +445,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicModal__VariantsArgs;
     args?: PlasmicModal__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicModal__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicModal__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicModal__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

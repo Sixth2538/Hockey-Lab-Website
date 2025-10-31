@@ -62,7 +62,6 @@ import {
 import Button from "../../Button"; // plasmic-import: TUfunDceiXe8/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -146,9 +145,8 @@ function PlasmicTeamsCard__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = _useGlobalVariants();
+
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   return (
     <div
@@ -162,7 +160,6 @@ function PlasmicTeamsCard__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.root
       )}
     >
@@ -240,7 +237,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTeamsCard__VariantsArgs;
     args?: PlasmicTeamsCard__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicTeamsCard__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicTeamsCard__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicTeamsCard__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

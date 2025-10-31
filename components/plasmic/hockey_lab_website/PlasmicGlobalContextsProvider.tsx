@@ -105,24 +105,24 @@ export default function GlobalContextsProvider(
         antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
           ? antdConfigProviderProps.themeStyles!
           : hasVariant(globalVariants, "screen", "mobileOnly")
-          ? {
-              fontFamily: "League Spartan",
-              fontSize: "16px",
-              fontWeight: "200",
-              lineHeight: "2",
-              color: "#00263A",
-              letterSpacing: "normal"
-            }
-          : true
-          ? {
-              fontFamily: "League Spartan",
-              fontSize: "18px",
-              fontWeight: "200",
-              lineHeight: "2",
-              color: "#00263A",
-              letterSpacing: "normal"
-            }
-          : undefined
+            ? {
+                fontFamily: "League Spartan",
+                fontSize: "16px",
+                fontWeight: "200",
+                lineHeight: "2",
+                color: "#00263A",
+                letterSpacing: "normal"
+              }
+            : true
+              ? {
+                  fontFamily: "League Spartan",
+                  fontSize: "18px",
+                  fontWeight: "200",
+                  lineHeight: "2",
+                  color: "#00263A",
+                  letterSpacing: "normal"
+                }
+              : undefined
       }
       wireframe={
         antdConfigProviderProps && "wireframe" in antdConfigProviderProps

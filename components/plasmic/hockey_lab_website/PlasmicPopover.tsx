@@ -66,7 +66,6 @@ import OverlayArrow from "../../OverlayArrow"; // plasmic-import: _QV6Qb-mj3ck/c
 import { BaseDialog } from "@plasmicpkgs/react-aria/skinny/registerDialog";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -188,8 +187,6 @@ function PlasmicPopover__RenderFunc(props: {
   });
 
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   return (
     <BaseDialogTrigger
@@ -203,7 +200,6 @@ function PlasmicPopover__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.ariaDialogTrigger
       )}
       dialog={
@@ -218,8 +214,7 @@ function PlasmicPopover__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            styleTokensClassNames,
-            styleTokensClassNames_antd_5_hostless
+            styleTokensClassNames
           )}
           shouldFlip={args.shouldFlip}
         >
@@ -327,7 +322,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPopover__VariantsArgs;
     args?: PlasmicPopover__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicPopover__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicPopover__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicPopover__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

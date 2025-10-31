@@ -63,7 +63,6 @@ import { BaseTextArea } from "@plasmicpkgs/react-aria/skinny/registerTextArea";
 import { inputHelpers as BaseTextArea_Helpers } from "@plasmicpkgs/react-aria/skinny/registerTextArea";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: vqq2EkAzn3CTTzmF7cN3ao/styleTokensProvider
-import { _useStyleTokens as useStyleTokens_antd_5_hostless } from "../antd_5_hostless/PlasmicStyleTokensProvider"; // plasmic-import: ohDidvG9XsCeFumugENU3J/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -227,8 +226,6 @@ function PlasmicTextAreaInput__RenderFunc(props: {
   });
 
   const styleTokensClassNames = _useStyleTokens();
-  const styleTokensClassNames_antd_5_hostless =
-    useStyleTokens_antd_5_hostless();
 
   const [$ccVariants, setDollarCcVariants] = React.useState<
     Record<string, boolean>
@@ -260,7 +257,6 @@ function PlasmicTextAreaInput__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         styleTokensClassNames,
-        styleTokensClassNames_antd_5_hostless,
         sty.ariaTextArea,
         {
           [sty.ariaTextAreaflat_bottom]: hasVariant($state, "flat", "bottom"),
@@ -335,7 +331,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTextAreaInput__VariantsArgs;
     args?: PlasmicTextAreaInput__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicTextAreaInput__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicTextAreaInput__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicTextAreaInput__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

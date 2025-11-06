@@ -14,95 +14,279 @@
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
+  transform-style: preserve-3d;
   border-radius: 0.375rem;
   padding: 0rem;
   border-width: 0px;
+}
+.root * {
+  transform-style: preserve-3d;
+}
+.root[data-hovered]:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.root[data-hovered] * {
+  transform-style: preserve-3d;
+}
+.root[data-pressed]:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.root[data-pressed] * {
+  transform-style: preserve-3d;
 }
 .root[data-focus-visible]:global(.__wab_instance) {
   outline-style: solid;
   outline-width: 0.125rem;
   outline-offset: 1px;
   outline-color: #2563eb;
+  transform-style: preserve-3d;
+}
+.root[data-focus-visible] * {
+  transform-style: preserve-3d;
 }
 .root[data-disabled]:global(.__wab_instance) {
   cursor: not-allowed;
+  transform-style: preserve-3d;
+}
+.root[data-disabled] * {
+  transform-style: preserve-3d;
 }
 .rootcolor_neutral:global(.__wab_instance) {
   background: #374151;
+  transform-style: preserve-3d;
+}
+.rootcolor_neutral * {
+  transform-style: preserve-3d;
 }
 .rootcolor_muted:global(.__wab_instance) {
   background: #6b7280;
+  transform-style: preserve-3d;
+}
+.rootcolor_muted * {
+  transform-style: preserve-3d;
 }
 .rootcolor_success:global(.__wab_instance) {
   background: #16a34a;
+  transform-style: preserve-3d;
+}
+.rootcolor_success * {
+  transform-style: preserve-3d;
 }
 .rootcolor_warning:global(.__wab_instance) {
   background: var(--token-NtAmdQ_kualH);
   color: var(--token-WHsNhxc1OvW6);
   pointer-events: none;
+  transform-style: preserve-3d;
+}
+.rootcolor_warning * {
+  transform-style: preserve-3d;
 }
 .rootcolor_errorDestructive:global(.__wab_instance) {
   background: #dc2626;
+  transform-style: preserve-3d;
+}
+.rootcolor_errorDestructive * {
+  transform-style: preserve-3d;
 }
 .rootcolor_white:global(.__wab_instance) {
   background: #ffffff;
   color: #374151;
+  transform-style: preserve-3d;
+}
+.rootcolor_white * {
+  transform-style: preserve-3d;
 }
 .rootcolor_black:global(.__wab_instance) {
   background: var(--token-evhIctAS0lR0);
+  transform-style: preserve-3d;
+}
+.rootcolor_black * {
+  transform-style: preserve-3d;
 }
 .rootcolor_blue:global(.__wab_instance) {
   background:
     linear-gradient(var(--token-5nf-gDqVbFjs), var(--token-5nf-gDqVbFjs)),
     #2563eb;
   cursor: default;
+  transform-style: preserve-3d;
+}
+.rootcolor_blue * {
+  transform-style: preserve-3d;
 }
 .roottype_soft:global(.__wab_instance) {
   background: none;
+  transform-style: preserve-3d;
+}
+.roottype_soft * {
+  transform-style: preserve-3d;
 }
 .roottype_bordered:global(.__wab_instance) {
   background: none;
+  transform-style: preserve-3d;
+}
+.roottype_bordered * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered[data-hovered]:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered[data-hovered] * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered[data-pressed]:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered[data-pressed] * {
+  transform-style: preserve-3d;
 }
 .rootsize_extraSmall:global(.__wab_instance) {
   line-height: 1;
   font-size: 0.75rem;
   column-gap: 0.125rem;
   row-gap: 0px;
+  transform-style: preserve-3d;
   border-radius: 0.25rem;
+}
+.rootsize_extraSmall * {
+  transform-style: preserve-3d;
 }
 .rootsize_small:global(.__wab_instance) {
   font-size: 0.75rem;
   line-height: 1;
   column-gap: 0.25rem;
   row-gap: 0px;
+  transform-style: preserve-3d;
   border-radius: 0.25rem;
+}
+.rootsize_small * {
+  transform-style: preserve-3d;
 }
 .rootsize_large:global(.__wab_instance) {
   font-size: 1.25rem;
   line-height: 1.4;
+  transform-style: preserve-3d;
+}
+.rootsize_large * {
+  transform-style: preserve-3d;
 }
 .rootsize_extraLarge:global(.__wab_instance) {
   font-size: 1.25rem;
   line-height: 1.4;
+  transform-style: preserve-3d;
+}
+.rootsize_extraLarge * {
+  transform-style: preserve-3d;
+}
+.rooticonStart:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rooticonStart * {
+  transform-style: preserve-3d;
+}
+.rooticonEnd:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rooticonEnd * {
+  transform-style: preserve-3d;
 }
 .rootroundedFull:global(.__wab_instance) {
+  transform-style: preserve-3d;
   border-radius: 99px;
+}
+.rootroundedFull * {
+  transform-style: preserve-3d;
 }
 .rootflatSide_top:global(.__wab_instance) {
   border-top-right-radius: 0rem;
   border-top-left-radius: 0rem;
+  transform-style: preserve-3d;
+}
+.rootflatSide_top * {
+  transform-style: preserve-3d;
 }
 .rootflatSide_right:global(.__wab_instance) {
   border-top-right-radius: 0rem;
   border-bottom-right-radius: 0rem;
+  transform-style: preserve-3d;
+}
+.rootflatSide_right * {
+  transform-style: preserve-3d;
 }
 .rootflatSide_bottom:global(.__wab_instance) {
   border-bottom-right-radius: 0rem;
   border-bottom-left-radius: 0rem;
+  transform-style: preserve-3d;
+}
+.rootflatSide_bottom * {
+  transform-style: preserve-3d;
 }
 .rootflatSide_left:global(.__wab_instance) {
   border-top-left-radius: 0rem;
   border-bottom-left-radius: 0rem;
+  transform-style: preserve-3d;
+}
+.rootflatSide_left * {
+  transform-style: preserve-3d;
+}
+.rootcolor_neutral_type_soft:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_neutral_type_soft * {
+  transform-style: preserve-3d;
+}
+.rootcolor_muted_type_soft:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_muted_type_soft * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_neutral:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_neutral * {
+  transform-style: preserve-3d;
+}
+.rootcolor_success_type_soft:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_success_type_soft * {
+  transform-style: preserve-3d;
+}
+.rootcolor_muted_type_bordered:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_muted_type_bordered * {
+  transform-style: preserve-3d;
+}
+.rootcolor_warning_type_soft:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_warning_type_soft * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_success:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_success * {
+  transform-style: preserve-3d;
+}
+.rootcolor_errorDestructive_type_soft:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.rootcolor_errorDestructive_type_soft * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_warning:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_warning * {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_errorDestructive:global(.__wab_instance) {
+  transform-style: preserve-3d;
+}
+.roottype_bordered_color_errorDestructive * {
+  transform-style: preserve-3d;
 }
 .softBackground {
   display: block;

@@ -91,10 +91,9 @@ export const PlasmicTestimonialCard__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicTestimonialCard__OverridesType = {
   root?: Flex__<"div">;
+  svg?: Flex__<"svg">;
   h4?: Flex__<"h4">;
   h6?: Flex__<"h6">;
-  svg?: Flex__<"svg">;
-  freeBox?: Flex__<"div">;
 };
 
 export interface DefaultTestimonialCardProps {
@@ -160,40 +159,43 @@ function PlasmicTestimonialCard__RenderFunc(props: {
         sty.root
       )}
     >
-      <h4
-        data-plasmic-name={"h4"}
-        data-plasmic-override={overrides.h4}
-        className={classNames(projectcss.all, projectcss.h4, sty.h4)}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox___69Uu9)}>
+        <div className={classNames(projectcss.all, sty.freeBox__vgooN)}>
+          <FormatQuoteSvgrepoComSvgIcon
+            data-plasmic-name={"svg"}
+            data-plasmic-override={overrides.svg}
+            className={classNames(projectcss.all, sty.svg)}
+            role={"img"}
+          />
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__bdnOa)}>
+          <h4
+            data-plasmic-name={"h4"}
+            data-plasmic-override={overrides.h4}
+            className={classNames(projectcss.all, projectcss.h4, sty.h4)}
+          >
+            {renderPlasmicSlot({
+              defaultContents: "Arshmit Pannu",
+              value: args.children
+            })}
+          </h4>
+          <h6
+            data-plasmic-name={"h6"}
+            data-plasmic-override={overrides.h6}
+            className={classNames(projectcss.all, projectcss.h6, sty.h6)}
+          >
+            {renderPlasmicSlot({
+              defaultContents:
+                "Canadian Junior Hockey World Cup Representative",
+              value: args.slot
+            })}
+          </h6>
+        </div>
+      </div>
+      <div className={classNames(projectcss.all, sty.freeBox__ebp0W)}>
         {renderPlasmicSlot({
-          defaultContents: "Name",
-          value: args.children
-        })}
-      </h4>
-      <h6
-        data-plasmic-name={"h6"}
-        data-plasmic-override={overrides.h6}
-        className={classNames(projectcss.all, projectcss.h6, sty.h6)}
-      >
-        {renderPlasmicSlot({
-          defaultContents: "Team",
-          value: args.slot
-        })}
-      </h6>
-      <FormatQuoteSvgrepoComSvgIcon
-        data-plasmic-name={"svg"}
-        data-plasmic-override={overrides.svg}
-        className={classNames(projectcss.all, sty.svg)}
-        role={"img"}
-      />
-
-      <div
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        className={classNames(projectcss.all, sty.freeBox)}
-      >
-        {renderPlasmicSlot({
-          defaultContents: "Testimonial",
+          defaultContents:
+            "Jackie has been an influential figure in my sporting career, and I\u2019m incredibly grateful for the impact he\u2019s had on me both on and off the field. I first met him at 13, fresh out of mini-hockey with nothing but raw talent. Jackie was the one who introduced me to the realities of adult hockey. Week after week, he worked with me to sharpen my ball skills, positioning, tactical knowledge, game management, and overall understanding of the modern game.\n\nWhat makes Jackie stand out is the way he could shape every session to what we needed most, while still letting us focus on areas we wanted to grow. His structured training, clear goals, and video sessions mirrored the professionalism I later saw at the international level. Beyond technical skills, Jackie also taught me what it means to be a leader, how to communicate, motivate teammates, and carry myself with accountability.\n\nHis commitment to my growth led me to my debut for Khalsa A at 16. Years later, one of my proudest moments came when I wore Team Canada\u2019s colours at the 2023 Junior World Cup in Malaysia. Having Jackie travel all the way there to sit in the stands and watch me play was incredibly special. It felt like everything we worked on together had come full circle, and it turned that tournament into a shared accomplishment.\n\nTo me, Jackie is far more than a coach. He\u2019s a mentor, role model, and friend who not only shaped me as a player, but also as a leader and person. His influence will stay with me for life.",
           value: args.slot2
         })}
       </div>
@@ -202,21 +204,19 @@ function PlasmicTestimonialCard__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h4", "h6", "svg", "freeBox"],
-  h4: ["h4"],
-  h6: ["h6"],
+  root: ["root", "svg", "h4", "h6"],
   svg: ["svg"],
-  freeBox: ["freeBox"]
+  h4: ["h4"],
+  h6: ["h6"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  svg: "svg";
   h4: "h4";
   h6: "h6";
-  svg: "svg";
-  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -281,10 +281,9 @@ export const PlasmicTestimonialCard = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    svg: makeNodeComponent("svg"),
     h4: makeNodeComponent("h4"),
     h6: makeNodeComponent("h6"),
-    svg: makeNodeComponent("svg"),
-    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicTestimonialCard
     internalVariantProps: PlasmicTestimonialCard__VariantProps,

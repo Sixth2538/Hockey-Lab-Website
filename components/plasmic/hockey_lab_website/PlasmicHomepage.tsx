@@ -82,6 +82,7 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 1yiwtfdP4kH3/
 import ChevronDownIcon from "./icons/PlasmicIcon__ChevronDown"; // plasmic-import: I1-UL0cTF0ke/icon
 import CircleIcon from "./icons/PlasmicIcon__Circle"; // plasmic-import: gQ9GL9qi87FQ/icon
 import ChevronDown2Icon from "./icons/PlasmicIcon__ChevronDown2"; // plasmic-import: qG4-swCrl7ga/icon
+import FormatQuoteSvgrepoComSvgIcon from "./icons/PlasmicIcon__FormatQuoteSvgrepoComSvg"; // plasmic-import: 189YLvEKZ9fA/icon
 import InstagramSvgrepoComSvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoComSvg"; // plasmic-import: aHoszmLT10rp/icon
 import FacebookSvgrepoComSvgIcon from "./icons/PlasmicIcon__FacebookSvgrepoComSvg"; // plasmic-import: c73RtLfNBEOR/icon
 import EmailSvgrepoComSvgIcon from "./icons/PlasmicIcon__EmailSvgrepoComSvg"; // plasmic-import: NnlUgWY9zufC/icon
@@ -107,7 +108,9 @@ export type PlasmicHomepage__OverridesType = {
   serviceCard2?: Flex__<typeof ServiceCard2>;
   serviceCard3?: Flex__<typeof ServiceCard3>;
   sliderCarousel2?: Flex__<typeof SliderWrapper>;
+  testimonialSectionSlider?: Flex__<"section">;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
+  testimonialSection?: Flex__<"section">;
   umamiTracking?: Flex__<typeof Embed>;
   formbricksSdk?: Flex__<typeof Embed>;
 };
@@ -231,6 +234,20 @@ function PlasmicHomepage__RenderFunc(props: {
                   aspectRatio: undefined
                 }}
               />
+
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__aS347
+                )}
+                component={Link}
+                href={"https://events.hockeylabhk.com"}
+                platform={"nextjs"}
+              >
+                {"EVENTS HUB"}
+              </PlasmicLink__>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__bUueP)}>
               <div className={classNames(projectcss.all, sty.freeBox___9A39Q)}>
@@ -1839,7 +1856,11 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section___0B1Gr)}>
+          <section
+            data-plasmic-name={"testimonialSectionSlider"}
+            data-plasmic-override={overrides.testimonialSectionSlider}
+            className={classNames(projectcss.all, sty.testimonialSectionSlider)}
+          >
             <div className={classNames(projectcss.all, sty.freeBox__ylLw0)}>
               <h6
                 className={classNames(
@@ -1922,6 +1943,9 @@ function PlasmicHomepage__RenderFunc(props: {
                           "__wab_instance",
                           sty.testimonialCard__sqsd0
                         )}
+                        slot2={
+                          "Jackie has profoundly shaped my sporting career, and I'm deeply grateful for his impact. I first met him at 13, raw with talent, and he guided me through the realities of adult hockey. He meticulously developed my skills \u2013 ball work, positioning, tactics, and game understanding \u2013 tailoring each session to my needs while fostering my desired growth. His structured training and professional approach prepared me for the international level. Beyond technique, he instilled leadership qualities, communication skills, and accountability.\n\nHis commitment to my development was instrumental in my debut for Khalsa A at 16, and I'll never forget his support at the 2023 Junior World Cup in Malaysia. Seeing him there felt like a culmination of all our work, making that tournament a shared accomplishment.\n\nJackie is more than a coach; he's a mentor, role model, and friend who has shaped me as a player, leader, and person. His influence will be lifelong."
+                        }
                       />
                     </div>
                   </div>
@@ -1999,6 +2023,76 @@ function PlasmicHomepage__RenderFunc(props: {
                 </SliderWrapper>
               );
             })()}
+          </section>
+          <section
+            data-plasmic-name={"testimonialSection"}
+            data-plasmic-override={overrides.testimonialSection}
+            className={classNames(projectcss.all, sty.testimonialSection)}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__zQd9R)}>
+              <h6
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h6,
+                  projectcss.__wab_text,
+                  sty.h6___6Pul7
+                )}
+              >
+                {"Athlete Stories"}
+              </h6>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__hy005
+                )}
+              >
+                {"Don't Just Take Our Word For It..."}
+              </h2>
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox___2GRx)}>
+              <div className={classNames(projectcss.all, sty.freeBox__ilSfE)}>
+                <FormatQuoteSvgrepoComSvgIcon
+                  className={classNames(projectcss.all, sty.svg__rxpDa)}
+                  role={"img"}
+                />
+
+                <div className={classNames(projectcss.all, sty.freeBox__y7Avg)}>
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4___23K5C
+                    )}
+                  >
+                    {"Arshmit Pannu"}
+                  </h4>
+                  <h6
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h6,
+                      projectcss.__wab_text,
+                      sty.h6__nPtyK
+                    )}
+                  >
+                    {"Canada Junior Hockey World Cup Player"}
+                  </h6>
+                </div>
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ax5O8
+                )}
+              >
+                {
+                  "Jackie has been an influential figure in my sporting career, and I\u2019m incredibly grateful for the impact he\u2019s had on me both on and off the field. I first met him at 13, fresh out of mini-hockey with nothing but raw talent. Jackie was the one who introduced me to the realities of adult hockey. Week after week, he worked with me to sharpen my ball skills, positioning, tactical knowledge, game management, and overall understanding of the modern game.\n\nWhat makes Jackie stand out is the way he could shape every session to what we needed most, while still letting us focus on areas we wanted to grow. His structured training, clear goals, and video sessions mirrored the professionalism I later saw at the international level. Beyond technical skills, Jackie also taught me what it means to be a leader, how to communicate, motivate teammates, and carry myself with accountability.\n\nHis commitment to my growth led me to my debut for Khalsa A at 16. Years later, one of my proudest moments came when I wore Team Canada\u2019s colours at the 2023 Junior World Cup in Malaysia. Having Jackie travel all the way there to sit in the stands and watch me play was incredibly special. It felt like everything we worked on together had come full circle, and it turned that tournament into a shared accomplishment.\n\nTo me, Jackie is far more than a coach. He\u2019s a mentor, role model, and friend who not only shaped me as a player, but also as a leader and person. His influence will stay with me for life."
+                }
+              </div>
+            </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__tgQ3B)}>
             <div className={classNames(projectcss.all, sty.freeBox__xXuJf)}>
@@ -2122,6 +2216,40 @@ function PlasmicHomepage__RenderFunc(props: {
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__xkUVz)}>
+              <div className={classNames(projectcss.all, sty.freeBox__hZs6H)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gs2Hc)}
+                  displayHeight={"100px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"200px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/hockey_lab_website/images/nakedLogoBlackSvg.svg",
+                    fullWidth: 152.42,
+                    fullHeight: 28.268,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3H4Io)}
+                >
+                  <h4
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4__l1OxQ
+                    )}
+                  >
+                    {"Naked Field Hockey"}
+                  </h4>
+                </div>
+              </div>
               <div className={classNames(projectcss.all, sty.freeBox__cdj9P)}>
                 <PlasmicImg__
                   alt={""}
@@ -2190,10 +2318,10 @@ function PlasmicHomepage__RenderFunc(props: {
                   </h4>
                 </div>
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox__hZs6H)}>
+              <div className={classNames(projectcss.all, sty.freeBox__qzQa3)}>
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__gs2Hc)}
+                  className={classNames(sty.img__rwYmc)}
                   displayHeight={"100px"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -2202,25 +2330,23 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"200px"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/hockey_lab_website/images/nakedLogoBlackSvg.svg",
-                    fullWidth: 152.42,
-                    fullHeight: 28.268,
+                    src: "/plasmic/hockey_lab_website/images/boxHillLogoSvg.svg",
+                    fullWidth: 1000,
+                    fullHeight: 550,
                     aspectRatio: undefined
                   }}
                 />
 
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___3H4Io)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__cvb2G)}>
                   <h4
                     className={classNames(
                       projectcss.all,
                       projectcss.h4,
                       projectcss.__wab_text,
-                      sty.h4__l1OxQ
+                      sty.h4__gHstz
                     )}
                   >
-                    {"Naked Field Hockey"}
+                    {"Box Hill (HK) International Kindergarten & Pre-school"}
                   </h4>
                 </div>
               </div>
@@ -2410,7 +2536,9 @@ const PlasmicDescendants = {
     "serviceCard2",
     "serviceCard3",
     "sliderCarousel2",
+    "testimonialSectionSlider",
     "sliderCarousel",
+    "testimonialSection",
     "umamiTracking",
     "formbricksSdk"
   ],
@@ -2421,7 +2549,9 @@ const PlasmicDescendants = {
   serviceCard2: ["serviceCard2"],
   serviceCard3: ["serviceCard3"],
   sliderCarousel2: ["sliderCarousel2"],
+  testimonialSectionSlider: ["testimonialSectionSlider", "sliderCarousel"],
   sliderCarousel: ["sliderCarousel"],
+  testimonialSection: ["testimonialSection"],
   umamiTracking: ["umamiTracking"],
   formbricksSdk: ["formbricksSdk"]
 } as const;
@@ -2437,7 +2567,9 @@ type NodeDefaultElementType = {
   serviceCard2: typeof ServiceCard2;
   serviceCard3: typeof ServiceCard3;
   sliderCarousel2: typeof SliderWrapper;
+  testimonialSectionSlider: "section";
   sliderCarousel: typeof SliderWrapper;
+  testimonialSection: "section";
   umamiTracking: typeof Embed;
   formbricksSdk: typeof Embed;
 };
@@ -2511,7 +2643,9 @@ export const PlasmicHomepage = Object.assign(
     serviceCard2: makeNodeComponent("serviceCard2"),
     serviceCard3: makeNodeComponent("serviceCard3"),
     sliderCarousel2: makeNodeComponent("sliderCarousel2"),
+    testimonialSectionSlider: makeNodeComponent("testimonialSectionSlider"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
+    testimonialSection: makeNodeComponent("testimonialSection"),
     umamiTracking: makeNodeComponent("umamiTracking"),
     formbricksSdk: makeNodeComponent("formbricksSdk"),
 

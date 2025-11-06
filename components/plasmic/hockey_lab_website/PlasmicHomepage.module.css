@@ -54,7 +54,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .section__h7So {
     justify-items: center;
-    align-content: center;
+    align-content: flex-end;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -103,11 +103,12 @@
   font-size: var(--token-UXPBeNJ4rrVx);
   transition-property: all;
   transition-duration: 1s;
-  left: 1204px;
-  top: 18px;
+  left: auto;
+  top: 20px;
   z-index: 1;
   position: fixed;
   background: var(--token-kvfgcHIi7Sgn);
+  right: 0;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
   padding: var(--token-sOKgu1b-fMSG);

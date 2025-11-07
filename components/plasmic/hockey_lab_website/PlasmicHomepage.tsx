@@ -215,17 +215,30 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__vkExg
+            )}
+            component={Link}
+            href={"https://events.hockeylabhk.com"}
+            platform={"nextjs"}
+          >
+            {"EVENTS HUB"}
+          </PlasmicLink__>
           <section className={classNames(projectcss.all, sty.section__h7So)}>
-            <div className={classNames(projectcss.all, sty.freeBox__kesXx)}>
+            <div className={classNames(projectcss.all, sty.freeBox__bUueP)}>
               <PlasmicImg__
                 alt={""}
-                className={classNames(sty.img__fSfc)}
+                className={classNames(sty.img__aBPc)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"100px"}
+                displayWidth={"120px"}
                 loading={"lazy"}
                 src={{
                   src: "/plasmic/hockey_lab_website/images/logoHorizontalMonoDarkSvg.svg",
@@ -235,21 +248,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 }}
               />
 
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__aS347
-                )}
-                component={Link}
-                href={"https://events.hockeylabhk.com"}
-                platform={"nextjs"}
-              >
-                {"EVENTS HUB"}
-              </PlasmicLink__>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__bUueP)}>
               <div className={classNames(projectcss.all, sty.freeBox___9A39Q)}>
                 <PlasmicImg__
                   alt={""}
